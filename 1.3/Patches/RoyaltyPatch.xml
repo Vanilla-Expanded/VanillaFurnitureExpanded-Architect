@@ -47,6 +47,7 @@
                      <tags>
                         <li>FineFloor</li>
                      </tags>
+					 <constructEffect>ConstructWood</constructEffect>
                   </TerrainDef>
                </value>
             </li>
