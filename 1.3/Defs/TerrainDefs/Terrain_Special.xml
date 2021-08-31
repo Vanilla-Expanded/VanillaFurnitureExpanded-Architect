@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <TerrainDef Abstract="True" Name="StoneBridgeBase">
+    <description>A flat stony surface on supportive beams which can be built over water. You can build heavy structures on these bridges, but if a bridge falls, buildings on top of it fall as well.</description>
+    <texturePath>StoneBridge/StoneBridge</texturePath>
+    <uiIconPath>StoneBridge/StoneBridge_MenuIcon</uiIconPath>
+    <layerable>true</layerable>
+    <bridge>true</bridge>
+    <affordances>
+      <li>Light</li>
+	  <li>Medium</li>
+	  <li>Heavy</li>
+    </affordances>
+    <researchPrerequisites>
+      <li>Stonecutting</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+    <designationCategory>Structure</designationCategory>
+    <fertility>0</fertility>
+    <terrainAffordanceNeeded>Bridgeable</terrainAffordanceNeeded>
+    <edgeType>Hard</edgeType>
+    <renderPrecedence>400</renderPrecedence>
+    <autoRebuildable>true</autoRebuildable>
+    <statBases>
+      <WorkToBuild>2500</WorkToBuild>
+      <Flammability>0</Flammability>
+    </statBases>
+    <tags>
+      <li>Floor</li>
+    </tags>
+    <destroyOnBombDamageThreshold>50</destroyOnBombDamageThreshold>
+    <destroyBuildingsOnDestroyed>true</destroyBuildingsOnDestroyed>
+    <destroyEffect>Bridge_Collapse</destroyEffect>
+    <destroyEffectWater>Bridge_CollapseWater</destroyEffectWater>
+	<designatorDropdown>VFEArch_StoneBridge</designatorDropdown>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="StoneBridgeBase">
+    <defName>VFEArch_BridgeSandstone</defName>
+    <label>sandstone bridge</label>
+    <color>(126,104,94)</color>
+    <costList>
+      <BlocksSandstone>12</BlocksSandstone>
+    </costList>
+  </TerrainDef>
+
+  <TerrainDef ParentName="StoneBridgeBase">
+    <defName>VFEArch_BridgeGranite</defName>
+    <label>granite bridge</label>
+    <color>(105,95,97)</color>
+    <costList>
+      <BlocksGranite>12</BlocksGranite>
+    </costList>
+  </TerrainDef>
+
+  <TerrainDef ParentName="StoneBridgeBase">
+    <defName>VFEArch_BridgeLimestone</defName>
+    <label>limestone bridge</label>
+    <color>(158,153,135)</color>
+    <costList>
+      <BlocksLimestone>12</BlocksLimestone>
+    </costList>
+  </TerrainDef>
+
+  <TerrainDef ParentName="StoneBridgeBase">
+    <defName>VFEArch_BridgeSlate</defName>
+    <label>slate bridge</label>
+    <color>(100,100,100)</color>
+    <costList>
+      <BlocksSlate>12</BlocksSlate>
+  </costList>
+  </TerrainDef>
+
+  <TerrainDef ParentName="StoneBridgeBase">
+    <defName>VFEArch_BridgeMarble</defName>
+    <label>marble bridge</label>
+    <color>(132,135,132)</color>
+    <costList>
+      <BlocksMarble>12</BlocksMarble>
+    </costList>
+  </TerrainDef>
+  
+  <TerrainDef Abstract="True" Name="SteelBridgeBase">
+    <description>A flat steel surface on supportive beams which can be built over water. You can build heavy structures on these bridges, but if a bridge falls, buildings on top of it fall as well.</description>
+    <texturePath>SteelBridge/SteelBridge</texturePath>
+    <uiIconPath>SteelBridge/SteelBridge_MenuIcon</uiIconPath>
+    <layerable>true</layerable>
+    <bridge>true</bridge>
+    <affordances>
+      <li>Light</li>
+	  <li>Medium</li>
+	  <li>Heavy</li>
+    </affordances>
+    <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+    <designationCategory>Structure</designationCategory>
+    <fertility>0</fertility>
+    <terrainAffordanceNeeded>Bridgeable</terrainAffordanceNeeded>
+    <edgeType>Hard</edgeType>
+    <renderPrecedence>400</renderPrecedence>
+    <autoRebuildable>true</autoRebuildable>
+    <statBases>
+      <WorkToBuild>2500</WorkToBuild>
+      <Flammability>0</Flammability>
+    </statBases>
+    <tags>
+      <li>Floor</li>
+    </tags>
+    <destroyOnBombDamageThreshold>50</destroyOnBombDamageThreshold>
+    <destroyBuildingsOnDestroyed>true</destroyBuildingsOnDestroyed>
+    <destroyEffect>Bridge_Collapse</destroyEffect>
+    <destroyEffectWater>Bridge_CollapseWater</destroyEffectWater>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="SteelBridgeBase">
+    <defName>VFEArch_BridgeSteel</defName>
+    <label>steel bridge</label>
+    <costList>
+      <Steel>12</Steel>
+    </costList>
+  </TerrainDef>
+
+</Defs>
