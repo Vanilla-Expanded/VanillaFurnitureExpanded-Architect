@@ -10,5 +10,10 @@
     <defName>VFEArch_WoodFloor</defName>
     <label>wood floor</label>
   </DesignatorDropdownGroupDef>
+  
+  <DesignatorDropdownGroupDef>
+    <defName>VFEArch_CobblestoneFloor</defName>
+    <label>cobblestone floor</label>
+  </DesignatorDropdownGroupDef>
 
 </Defs>
