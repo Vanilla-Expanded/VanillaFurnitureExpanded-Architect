@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+   <TerrainDef ParentName="FloorBase">
+      <defName>VFEArch_Asphalt</defName>
+      <label>asphalt</label>
+      <description>Rough asphalt. It is cheap and quick to build, but is also quite ugly.</description>
+      <texturePath>Terrains/Asphalt</texturePath>
+      <edgeType>Hard</edgeType>
+      <renderPrecedence>70</renderPrecedence>
+      <statBases>
+         <Beauty>-1</Beauty>
+         <WorkToBuild>100</WorkToBuild>
+      </statBases>
+      <costList>
+         <Steel>1</Steel>
+      </costList>
+      <researchPrerequisites>
+         <li>Stonecutting</li>
+      </researchPrerequisites>
+   </TerrainDef>
+   
+   <TerrainDef ParentName="FloorBase">
+      <defName>VFEArch_WoodenParquet</defName>
+      <label>wooden parquet</label>
+      <description>Nicely looking wooden planks laid out at an angle.</description>
+      <texturePath>Terrains/Parquet</texturePath>
+      <renderPrecedence>228</renderPrecedence>
+      <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+      <color>(108,78,55)</color>
+      <costList>
+         <WoodLog>12</WoodLog>
+      </costList>
+      <statBases>
+         <WorkToBuild>1000</WorkToBuild>
+         <Beauty>2</Beauty>
+      </statBases>
+      <constructEffect>ConstructWood</constructEffect>
+   </TerrainDef>
+   
+</Defs>
