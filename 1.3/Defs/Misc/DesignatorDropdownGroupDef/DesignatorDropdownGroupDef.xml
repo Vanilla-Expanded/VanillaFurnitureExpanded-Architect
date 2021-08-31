@@ -5,5 +5,10 @@
     <defName>VFEArch_StoneBridge</defName>
     <label>stone bridge</label>
   </DesignatorDropdownGroupDef>
+  
+  <DesignatorDropdownGroupDef>
+    <defName>VFEArch_WoodFloor</defName>
+    <label>wood floor</label>
+  </DesignatorDropdownGroupDef>
 
 </Defs>
