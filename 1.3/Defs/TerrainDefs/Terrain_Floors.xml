@@ -38,4 +38,62 @@
       <constructEffect>ConstructWood</constructEffect>
    </TerrainDef>
    
+   <!--Wooden floor colour variations-->
+  <TerrainDef  ParentName="FloorBase">
+    <defName>VFEArch_WoodPlankFloorWalnut</defName>
+    <label>walnut wood floor</label>
+    <renderPrecedence>250</renderPrecedence>
+    <description>Wood plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
+    <texturePath>Terrain/Surfaces/WoodFloor</texturePath>
+    <burnedDef>BurnedWoodPlankFloor</burnedDef>
+    <color>(79,60,45)</color>
+    <statBases>
+      <WorkToBuild>85</WorkToBuild>
+      <Flammability>0.22</Flammability>
+    </statBases>
+    <costList>
+      <WoodLog>3</WoodLog>
+    </costList>
+    <constructEffect>ConstructWood</constructEffect>
+	<designatorDropdown>VFEArch_WoodFloor</designatorDropdown>
+  </TerrainDef>
+  
+  <TerrainDef  ParentName="FloorBase">
+    <defName>VFEArch_WoodPlankFloorBirch</defName>
+    <label>birch wood floor</label>
+    <renderPrecedence>250</renderPrecedence>
+    <description>Wood plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
+    <texturePath>Terrain/Surfaces/WoodFloor</texturePath>
+    <burnedDef>BurnedWoodPlankFloor</burnedDef>
+    <color>(243,196,150)</color>
+    <statBases>
+      <WorkToBuild>85</WorkToBuild>
+      <Flammability>0.22</Flammability>
+    </statBases>
+    <costList>
+      <WoodLog>3</WoodLog>
+    </costList>
+    <constructEffect>ConstructWood</constructEffect>
+	<designatorDropdown>VFEArch_WoodFloor</designatorDropdown>
+  </TerrainDef>
+  
+  <TerrainDef  ParentName="FloorBase">
+    <defName>VFEArch_WoodPlankFloorMahogany</defName>
+    <label>mahogany wood floor</label>
+    <renderPrecedence>250</renderPrecedence>
+    <description>Wood plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
+    <texturePath>Terrain/Surfaces/WoodFloor</texturePath>
+    <burnedDef>BurnedWoodPlankFloor</burnedDef>
+    <color>(134,79,49)</color>
+    <statBases>
+      <WorkToBuild>85</WorkToBuild>
+      <Flammability>0.22</Flammability>
+    </statBases>
+    <costList>
+      <WoodLog>3</WoodLog>
+    </costList>
+    <constructEffect>ConstructWood</constructEffect>
+	<designatorDropdown>VFEArch_WoodFloor</designatorDropdown>
+  </TerrainDef>
+   
 </Defs>
