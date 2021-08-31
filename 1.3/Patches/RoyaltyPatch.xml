@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+   <Operation Class="PatchOperationFindMod">
+      <mods>
+         <li>Royalty</li>
+      </mods>
+      <match Class="PatchOperationSequence">
+         <operations>
+            <li Class="PatchOperationAdd">
+               <xpath>/Defs</xpath>
+               <value>
+                  <TerrainDef ParentName="FloorBase">
+                     <defName>VFEArch_FineMetalTile</defName>
+                     <label>fine metal tile</label>
+                     <description>Fine steel plates with a royal pattern for that luxurious look.</description>
+                     <texturePath>Terrains/FineMetalTile</texturePath>
+                     <renderPrecedence>228</renderPrecedence>
+                     <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+                     <color>(105,105,105)</color>
+                     <costList>
+                        <Steel>20</Steel>
+                     </costList>
+                     <statBases>
+                        <WorkToBuild>5000</WorkToBuild>
+                        <Beauty>3</Beauty>
+                     </statBases>
+                     <tags>
+                        <li>FineFloor</li>
+                     </tags>
+                  </TerrainDef>
+				  
+                  <TerrainDef ParentName="FloorBase">
+                     <defName>VFEArch_FineWoodenFloor</defName>
+                     <label>fine wooden floor</label>
+                     <description>Fine wooden floor with exotic carvings for that luxurious look.</description>
+                     <texturePath>Terrains/FineWoodenFloor</texturePath>
+                     <renderPrecedence>228</renderPrecedence>
+                     <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+                     <color>(108,78,55)</color>
+                     <costList>
+                        <WoodLog>20</WoodLog>
+                     </costList>
+                     <statBases>
+                        <WorkToBuild>5000</WorkToBuild>
+                        <Beauty>3</Beauty>
+                     </statBases>
+                     <tags>
+                        <li>FineFloor</li>
+                     </tags>
+                  </TerrainDef>
+               </value>
+            </li>
+         </operations>
+      </match>
+   </Operation>
+</Patch>
+
