@@ -32,7 +32,7 @@
          <WoodLog>12</WoodLog>
       </costList>
       <statBases>
-         <WorkToBuild>1000</WorkToBuild>
+         <WorkToBuild>3000</WorkToBuild>
          <Beauty>2</Beauty>
       </statBases>
       <constructEffect>ConstructWood</constructEffect>
@@ -155,6 +155,64 @@
     <color>(132,135,132)</color>
     <costList>
       <BlocksMarble>4</BlocksMarble>
+    </costList>
+  </TerrainDef>
+  
+  <!--====================================== Polished stone floor =======================================-->
+  
+  <TerrainDef Abstract="True" ParentName="FloorBase" Name="FlagstoneBase">
+    <renderPrecedence>220</renderPrecedence>
+    <description>Betiful stony tiles polished to a shine. Checkered.</description>
+    <texturePath>Terrains/PolishedStoneFloor</texturePath>
+    <statBases>
+      <WorkToBuild>3000</WorkToBuild>
+      <Beauty>2</Beauty>
+    </statBases>
+    <designatorDropdown>VFEArch_PolishedStoneFloor</designatorDropdown>
+  </TerrainDef>
+
+  <TerrainDef ParentName="FlagstoneBase">
+    <defName>VFEArch_PolishedStoneFloorSandstone</defName>
+    <label>sandstone polished stone floor</label>
+    <color>(126,104,94)</color>
+    <costList>
+      <BlocksSandstone>12</BlocksSandstone>
+    </costList>
+  </TerrainDef>
+
+  <TerrainDef ParentName="FlagstoneBase">
+    <defName>VFEArch_PolishedStoneFloorGranite</defName>
+    <label>granite polished stone floor</label>
+    <color>(105,95,97)</color>
+    <costList>
+      <BlocksGranite>12</BlocksGranite>
+    </costList>
+  </TerrainDef>
+
+  <TerrainDef ParentName="FlagstoneBase">
+    <defName>VFEArch_PolishedStoneFloorLimestone</defName>
+    <label>limestone polished stone floor</label>
+    <color>(158,153,135)</color>
+    <costList>
+      <BlocksLimestone>12</BlocksLimestone>
+    </costList>
+  </TerrainDef>
+
+  <TerrainDef ParentName="FlagstoneBase">
+    <defName>VFEArch_PolishedStoneFloorSlate</defName>
+    <label>slate polished stone floor</label>
+    <color>(105,105,105)</color>
+    <costList>
+      <BlocksSlate>12</BlocksSlate>
+    </costList>
+  </TerrainDef>
+
+  <TerrainDef ParentName="FlagstoneBase">
+    <defName>VFEArch_PolishedStoneFloorMarble</defName>
+    <label>marble polished stone floor</label>
+    <color>(132,135,132)</color>
+    <costList>
+      <BlocksMarble>12</BlocksMarble>
     </costList>
   </TerrainDef>
   
