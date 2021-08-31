@@ -95,5 +95,68 @@
     <constructEffect>ConstructWood</constructEffect>
 	<designatorDropdown>VFEArch_WoodFloor</designatorDropdown>
   </TerrainDef>
+  
+  <!--====================================== Cobblestone floor =======================================-->
+  
+  <TerrainDef Abstract="True" ParentName="FloorBase" Name="FlagstoneBase">
+    <renderPrecedence>220</renderPrecedence>
+    <description>Tiles made out of chipped stones. These are not beautiful, but they make good surfaces for roads and outdoor walkways. Deconstructing cobblestone flooring yields no resources.</description>
+    <texturePath>Terrains/Cobblestone</texturePath>
+    <resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+    <statBases>
+      <WorkToBuild>400</WorkToBuild>
+      <Beauty>0</Beauty>
+    </statBases>
+    <designatorDropdown>VFEArch_CobblestoneFloor</designatorDropdown>
+    <tags>
+      <li>Road</li>
+    </tags>
+  </TerrainDef>
+
+  <TerrainDef ParentName="FlagstoneBase">
+    <defName>VFEArch_CobblestoneFloorSandstone</defName>
+    <label>sandstone cobblestone floor</label>
+    <color>(126,104,94)</color>
+    <costList>
+      <BlocksSandstone>4</BlocksSandstone>
+    </costList>
+  </TerrainDef>
+
+  <TerrainDef ParentName="FlagstoneBase">
+    <defName>VFEArch_CobblestoneFloorGranite</defName>
+    <label>granite cobblestone floor</label>
+    <color>(105,95,97)</color>
+    <costList>
+      <BlocksGranite>4</BlocksGranite>
+    </costList>
+  </TerrainDef>
+
+  <TerrainDef ParentName="FlagstoneBase">
+    <defName>VFEArch_CobblestoneFloorLimestone</defName>
+    <label>limestone cobblestone floor</label>
+    <color>(158,153,135)</color>
+    <costList>
+      <BlocksLimestone>4</BlocksLimestone>
+    </costList>
+  </TerrainDef>
+
+  <TerrainDef ParentName="FlagstoneBase">
+    <defName>VFEArch_CobblestoneFloorSlate</defName>
+    <label>slate cobblestone floor</label>
+    <color>(105,105,105)</color>
+    <costList>
+      <BlocksSlate>4</BlocksSlate>
+    </costList>
+  </TerrainDef>
+
+  <TerrainDef ParentName="FlagstoneBase">
+    <defName>VFEArch_CobblestoneFloorMarble</defName>
+    <label>marble cobblestone floor</label>
+    <color>(132,135,132)</color>
+    <costList>
+      <BlocksMarble>4</BlocksMarble>
+    </costList>
+  </TerrainDef>
+  
    
 </Defs>
