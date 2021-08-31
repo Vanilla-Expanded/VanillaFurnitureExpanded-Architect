@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/TerrainDef[defName="BrokenAsphalt"]</xpath>
+        <value>
+            <costList>
+              <Steel>1</Steel>
+            </costList>
+			<designationCategory>Floors</designationCategory>
+		</value>
+    </Operation>
+	
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/TerrainDef[defName="BrokenAsphalt"]/statBases</xpath>
+        <value>
+            <WorkToBuild>70</WorkToBuild>
+		</value>
+    </Operation>
+	
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/TerrainDef[defName="PackedDirt"]</xpath>
+        <value>
+			<designationCategory>Floors</designationCategory>
+		</value>
+    </Operation>
+	
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/TerrainDef[defName="PackedDirt"]/statBases</xpath>
+        <value>
+            <WorkToBuild>50</WorkToBuild>
+		</value>
+    </Operation>
+	
+</Patch>
