@@ -48,7 +48,79 @@
                         <li>FineFloor</li>
                      </tags>
 					 <constructEffect>ConstructWood</constructEffect>
+					 <designatorDropdown>VFEArch_FineWoodenFloor</designatorDropdown>
                   </TerrainDef>
+				  
+                  <TerrainDef ParentName="FloorBase">
+                     <defName>VFEArch_FineWoodenFloorWalnut</defName>
+                     <label>walnut fine wooden floor</label>
+                     <description>Fine wooden floor with exotic carvings for that luxurious look.</description>
+                     <texturePath>Terrains/FineWoodenFloor</texturePath>
+                     <renderPrecedence>228</renderPrecedence>
+                     <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+                     <color>(79,60,45)</color>
+                     <costList>
+                        <WoodLog>20</WoodLog>
+                     </costList>
+                     <statBases>
+                        <WorkToBuild>5000</WorkToBuild>
+                        <Beauty>3</Beauty>
+                     </statBases>
+                     <tags>
+                        <li>FineFloor</li>
+                     </tags>
+					 <constructEffect>ConstructWood</constructEffect>
+					 <designatorDropdown>VFEArch_FineWoodenFloor</designatorDropdown>
+                  </TerrainDef>
+				  
+                  <TerrainDef ParentName="FloorBase">
+                     <defName>VFEArch_FineWoodenFloorBirch</defName>
+                     <label>birch fine wooden floor</label>
+                     <description>Fine wooden floor with exotic carvings for that luxurious look.</description>
+                     <texturePath>Terrains/FineWoodenFloor</texturePath>
+                     <renderPrecedence>228</renderPrecedence>
+                     <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+                     <color>(243,196,150)</color>
+                     <costList>
+                        <WoodLog>20</WoodLog>
+                     </costList>
+                     <statBases>
+                        <WorkToBuild>5000</WorkToBuild>
+                        <Beauty>3</Beauty>
+                     </statBases>
+                     <tags>
+                        <li>FineFloor</li>
+                     </tags>
+					 <constructEffect>ConstructWood</constructEffect>
+					 <designatorDropdown>VFEArch_FineWoodenFloor</designatorDropdown>
+                  </TerrainDef>
+				  
+                  <TerrainDef ParentName="FloorBase">
+                     <defName>VFEArch_FineWoodenFloorMahogany</defName>
+                     <label>mahogany fine wooden floor</label>
+                     <description>Fine wooden floor with exotic carvings for that luxurious look.</description>
+                     <texturePath>Terrains/FineWoodenFloor</texturePath>
+                     <renderPrecedence>228</renderPrecedence>
+                     <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+                     <color>(134,79,49)</color>
+                     <costList>
+                        <WoodLog>20</WoodLog>
+                     </costList>
+                     <statBases>
+                        <WorkToBuild>5000</WorkToBuild>
+                        <Beauty>3</Beauty>
+                     </statBases>
+                     <tags>
+                        <li>FineFloor</li>
+                     </tags>
+					 <constructEffect>ConstructWood</constructEffect>
+					 <designatorDropdown>VFEArch_FineWoodenFloor</designatorDropdown>
+                  </TerrainDef>
+				  
+                  <DesignatorDropdownGroupDef>
+                    <defName>VFEArch_FineWoodenFloor</defName>
+                    <label>fine wooden floor</label>
+                   </DesignatorDropdownGroupDef>
                </value>
             </li>
          </operations>
