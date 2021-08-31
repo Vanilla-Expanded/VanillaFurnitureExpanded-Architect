@@ -5,7 +5,7 @@
     <defName>VFEArch_Grass</defName>
     <label>grass</label>
 	<description>Green grass with patches of dirt. Takes some extent of work to make but no resources.</description>
-    <texturePath>Terrain/Grass</texturePath>
+    <texturePath>Terrains/Grass</texturePath>
     <edgeType>FadeRough</edgeType>
     <renderPrecedence>340</renderPrecedence>
     <pathCost>2</pathCost>
