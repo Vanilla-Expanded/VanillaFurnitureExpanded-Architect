@@ -9,6 +9,7 @@
     <edgeType>FadeRough</edgeType>
     <renderPrecedence>340</renderPrecedence>
     <pathCost>2</pathCost>
+	<constructEffect>ConstructDirt</constructEffect>
     <statBases>
       <Beauty>0</Beauty>
       <Cleanliness>-1</Cleanliness>
