@@ -47,8 +47,8 @@
                      <tags>
                         <li>FineFloor</li>
                      </tags>
-					 <constructEffect>ConstructWood</constructEffect>
-					 <designatorDropdown>VFEArch_FineWoodenFloor</designatorDropdown>
+                     <constructEffect>ConstructWood</constructEffect>
+                     <designatorDropdown>VFEArch_FineWoodenFloor</designatorDropdown>
                   </TerrainDef>
 				  
                   <TerrainDef ParentName="FloorBase">
@@ -69,8 +69,8 @@
                      <tags>
                         <li>FineFloor</li>
                      </tags>
-					 <constructEffect>ConstructWood</constructEffect>
-					 <designatorDropdown>VFEArch_FineWoodenFloor</designatorDropdown>
+                     <constructEffect>ConstructWood</constructEffect>
+                     <designatorDropdown>VFEArch_FineWoodenFloor</designatorDropdown>
                   </TerrainDef>
 				  
                   <TerrainDef ParentName="FloorBase">
@@ -91,8 +91,8 @@
                      <tags>
                         <li>FineFloor</li>
                      </tags>
-					 <constructEffect>ConstructWood</constructEffect>
-					 <designatorDropdown>VFEArch_FineWoodenFloor</designatorDropdown>
+                     <constructEffect>ConstructWood</constructEffect>
+                     <designatorDropdown>VFEArch_FineWoodenFloor</designatorDropdown>
                   </TerrainDef>
 				  
                   <TerrainDef ParentName="FloorBase">
@@ -113,14 +113,111 @@
                      <tags>
                         <li>FineFloor</li>
                      </tags>
-					 <constructEffect>ConstructWood</constructEffect>
-					 <designatorDropdown>VFEArch_FineWoodenFloor</designatorDropdown>
+                     <constructEffect>ConstructWood</constructEffect>
+                     <designatorDropdown>VFEArch_FineWoodenFloor</designatorDropdown>
                   </TerrainDef>
 				  
                   <DesignatorDropdownGroupDef>
-                    <defName>VFEArch_FineWoodenFloor</defName>
-                    <label>fine wooden floor</label>
-                   </DesignatorDropdownGroupDef>
+                     <defName>VFEArch_FineWoodenFloor</defName>
+                     <label>fine wooden floor</label>
+                  </DesignatorDropdownGroupDef>
+				  
+                  <ThingDef ParentName="BuildingBase">
+                     <defName>VFEArch_FineWall</defName>
+                     <label>fine wall</label>
+                     <description>An impassable fine wall. Capable of holding up a roof.</description>
+                     <thingClass>Building</thingClass>
+                     <category>Building</category>
+                     <graphicData>
+                        <texPath>FineWall</texPath>
+                        <graphicClass>Graphic_Appearances</graphicClass>
+                        <linkType>CornerFiller</linkType>
+                        <linkFlags>
+                           <li>Wall</li>
+                           <li>Rock</li>
+                        </linkFlags>
+                        <damageData>
+                           <cornerTL>Damage/Corner</cornerTL>
+                           <cornerTR>Damage/Corner</cornerTR>
+                           <cornerBL>Damage/Corner</cornerBL>
+                           <cornerBR>Damage/Corner</cornerBR>
+                           <edgeTop>Damage/Edge</edgeTop>
+                           <edgeBot>Damage/Edge</edgeBot>
+                           <edgeLeft>Damage/Edge</edgeLeft>
+                           <edgeRight>Damage/Edge</edgeRight>
+                        </damageData>
+                     </graphicData>
+                     <uiIconPath>FineWall/FineWallSmooth_MenuIcon</uiIconPath>
+                     <uiIconPathsStuff>
+                        <li>
+                           <appearance>Planks</appearance>
+                           <iconPath>FineWall/FineWallPlanks_MenuIcon</iconPath>
+                        </li>
+                        <li>
+                           <appearance>Bricks</appearance>
+                           <iconPath>FineWall/FineWallBricks_MenuIcon</iconPath>
+                        </li>
+                     </uiIconPathsStuff>
+                     <statBases>
+                        <MaxHitPoints>300</MaxHitPoints>
+                        <WorkToBuild>135</WorkToBuild>
+                        <Flammability>1.0</Flammability>
+                        <MeditationFocusStrength>0.22</MeditationFocusStrength>
+                     </statBases>
+                     <costStuffCount>5</costStuffCount>
+                     <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+                     <altitudeLayer>Building</altitudeLayer>
+                     <passability>Impassable</passability>
+                     <blockWind>true</blockWind>
+                     <castEdgeShadows>true</castEdgeShadows>
+                     <fillPercent>1</fillPercent>
+                     <coversFloor>true</coversFloor>
+                     <placingDraggableDimensions>1</placingDraggableDimensions>
+                     <tickerType>Never</tickerType>
+                     <rotatable>false</rotatable>
+                     <selectable>true</selectable>
+                     <neverMultiSelect>true</neverMultiSelect>
+                     <useStuffTerrainAffordance>true</useStuffTerrainAffordance>
+                     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+                     <!-- Best affordance needed for stone -->
+                     <holdsRoof>true</holdsRoof>
+                     <designationCategory>Structure</designationCategory>
+                     <staticSunShadowHeight>1.0</staticSunShadowHeight>
+                     <blockLight>true</blockLight>
+                     <canOverlapZones>false</canOverlapZones>
+                     <fertility>0</fertility>
+                     <stuffCategories>
+                        <li>Metallic</li>
+                        <li>Woody</li>
+                        <li>Stony</li>
+                     </stuffCategories>
+                     <building>
+                        <isInert>true</isInert>
+                        <isPlaceOverableWall>true</isPlaceOverableWall>
+                        <ai_chillDestination>false</ai_chillDestination>
+                        <blueprintGraphicData>
+                           <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+                        </blueprintGraphicData>
+                     </building>
+                     <comps>
+                        <li Class="CompProperties_MeditationFocus">
+                           <statDef>MeditationFocusStrength</statDef>
+                           <focusTypes>
+                              <li>Minimal</li>
+                           </focusTypes>
+                        </li>
+                     </comps>
+                     <damageMultipliers>
+                        <li>
+                           <damageDef>Bomb</damageDef>
+                           <multiplier>2</multiplier>
+                        </li>
+                        <li>
+                           <damageDef>Thump</damageDef>
+                           <multiplier>4</multiplier>
+                        </li>
+                     </damageMultipliers>
+                  </ThingDef>
                </value>
             </li>
          </operations>
