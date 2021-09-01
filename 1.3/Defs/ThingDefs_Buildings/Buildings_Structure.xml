@@ -213,6 +213,7 @@ Picket fences are considerably more beautiful than alternatives, and evoke a nic
       <MaxHitPoints>40</MaxHitPoints>
       <WorkToBuild>70</WorkToBuild>
       <Flammability>1.0</Flammability>
+	  <Beauty>1</Beauty>
     </statBases>
 	<costList>
 	    <WoodLog>1</WoodLog>
@@ -252,22 +253,22 @@ Picket fences are considerably more beautiful than alternatives, and evoke a nic
 	<designatorDropdown>VFEArch_PicketFence</designatorDropdown>
   </ThingDef>
   
-  <TerrainDef ParentName="PicketFenceBase">
+  <ThingDef ParentName="PicketFenceBase">
     <defName>VFEArch_PicketFenceWalnut</defName>
     <label>walnut picket fence</label>
     <color>(79,60,45)</color>
-  </TerrainDef>
+  </ThingDef>
 
-  <TerrainDef ParentName="PicketFenceBase">
+  <ThingDef ParentName="PicketFenceBase">
     <defName>VFEArch_PicketFenceBirch</defName>
     <label>birch picket fence</label>
-    <color>(243,196,150))</color>
-  </TerrainDef>
+    <color>(243,196,150)</color>
+  </ThingDef>
 
-  <TerrainDef ParentName="PicketFenceBase">
+  <ThingDef ParentName="PicketFenceBase">
     <defName>VFEArch_PicketFenceMahogany</defName>
     <label>mahogany picket fence</label>
     <color>(134,79,49)</color>
-  </TerrainDef>
+  </ThingDef>
 
 </Defs>
