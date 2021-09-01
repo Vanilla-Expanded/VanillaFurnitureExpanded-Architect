@@ -216,10 +216,9 @@ Picket fences are considerably more beautiful than alternatives, and evoke a nic
       <Flammability>1.0</Flammability>
 	  <Beauty>1</Beauty>
     </statBases>
-    <stuffCategories>
-      <li>Woody</li>
-    </stuffCategories>
-	<costStuffCount>1</costStuffCount>
+	<costList>
+	    <WoodLog>1</WoodLog>
+	</costList>
     <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
     <altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
@@ -262,8 +261,6 @@ Picket fences are considerably more beautiful than alternatives, and evoke a nic
 	<costList>
 	    <WoodLog>1</WoodLog>
 	</costList>
-	<stuffCategories Inherit="False"/>
-	<costStuffCount Inherit="False"/>
   </ThingDef>
 
   <ThingDef ParentName="PicketFenceBase">
@@ -275,8 +272,6 @@ Picket fences are considerably more beautiful than alternatives, and evoke a nic
 	<costList>
 	    <WoodLog>1</WoodLog>
 	</costList>
-	<stuffCategories Inherit="False"/>
-	<costStuffCount Inherit="False"/>
   </ThingDef>
 
   <ThingDef ParentName="PicketFenceBase">
@@ -288,8 +283,6 @@ Picket fences are considerably more beautiful than alternatives, and evoke a nic
 	<costList>
 	    <WoodLog>1</WoodLog>
 	</costList>
-	<stuffCategories Inherit="False"/>
-	<costStuffCount Inherit="False"/>
   </ThingDef>
   
   <ThingDef ParentName="BuildingBase">
