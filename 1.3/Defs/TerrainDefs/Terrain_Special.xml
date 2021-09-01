@@ -34,6 +34,12 @@
     <destroyEffect>Bridge_Collapse</destroyEffect>
     <destroyEffectWater>Bridge_CollapseWater</destroyEffectWater>
 	<designatorDropdown>VFEArch_StoneBridge</designatorDropdown>
+  <modExtensions>
+    <li Class="VFEArchitect.TerrainExtension_CustomBridgeProps">
+      <loopPath>StoneBridge/StoneBridgeProps_Loop</loopPath>
+      <rightPath>StoneBridge/StoneBridgeProps_Right</rightPath>
+    </li>
+  </modExtensions>
   </TerrainDef>
   
   <TerrainDef ParentName="StoneBridgeBase">
@@ -110,6 +116,12 @@
     <destroyBuildingsOnDestroyed>true</destroyBuildingsOnDestroyed>
     <destroyEffect>Bridge_Collapse</destroyEffect>
     <destroyEffectWater>Bridge_CollapseWater</destroyEffectWater>
+    <modExtensions>
+      <li Class="VFEArchitect.TerrainExtension_CustomBridgeProps">
+        <loopPath>SteelBridge/SteelBridgeProps_Loop</loopPath>
+        <rightPath>SteelBridge/SteelBridgeProps_Right</rightPath>
+      </li>
+    </modExtensions>
   </TerrainDef>
   
   <TerrainDef ParentName="SteelBridgeBase">
