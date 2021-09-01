@@ -179,6 +179,7 @@ Picket fences are considerably more beautiful than alternatives, and evoke a nic
     <graphicData>
       <texPath>Fences/PicketFence/PicketFence_Atlas</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+	  <color>(108,78,55)</color>
       <linkType>Asymmetric</linkType>
       <linkFlags>
         <li>Fences</li>
@@ -218,7 +219,6 @@ Picket fences are considerably more beautiful than alternatives, and evoke a nic
 	<costList>
 	    <WoodLog>1</WoodLog>
 	</costList>
-	<color>(108,78,55)</color>
     <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
     <altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
@@ -230,7 +230,6 @@ Picket fences are considerably more beautiful than alternatives, and evoke a nic
     <rotatable>false</rotatable>
     <selectable>true</selectable>
     <neverMultiSelect>true</neverMultiSelect>
-    <useStuffTerrainAffordance>true</useStuffTerrainAffordance>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <designationCategory>Structure</designationCategory>
     <canOverlapZones>false</canOverlapZones>
@@ -256,19 +255,25 @@ Picket fences are considerably more beautiful than alternatives, and evoke a nic
   <ThingDef ParentName="PicketFenceBase">
     <defName>VFEArch_PicketFenceWalnut</defName>
     <label>walnut picket fence</label>
-    <color>(79,60,45)</color>
+    <graphicData>
+	  <color>(79,60,45)</color>
+    </graphicData>
   </ThingDef>
 
   <ThingDef ParentName="PicketFenceBase">
     <defName>VFEArch_PicketFenceBirch</defName>
     <label>birch picket fence</label>
-    <color>(243,196,150)</color>
+    <graphicData>
+	  <color>(243,196,150)</color>
+    </graphicData>
   </ThingDef>
 
   <ThingDef ParentName="PicketFenceBase">
     <defName>VFEArch_PicketFenceMahogany</defName>
     <label>mahogany picket fence</label>
-    <color>(134,79,49)</color>
+    <graphicData>
+	  <color>(134,79,49)</color>
+    </graphicData>
   </ThingDef>
 
 </Defs>
