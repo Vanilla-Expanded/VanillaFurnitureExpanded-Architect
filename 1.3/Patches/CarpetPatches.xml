@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+   <Operation Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+      <value>
+         <TerrainDef ParentName="CarpetBase">
+            <defName>VFEArch_CarpetYellow</defName>
+            <label>yellow carpet</label>
+            <renderPrecedence>200</renderPrecedence>
+            <description>Sun-yellow carpet that gives positive vibes.</description>
+            <color>(150,146,8)</color>
+         </TerrainDef>
+         <TerrainDef ParentName="CarpetBase">
+            <defName>VFEArch_CarpetPurple</defName>
+            <label>purple carpet</label>
+            <renderPrecedence>199</renderPrecedence>
+            <description>Plush carpet in a playful purple tone.</description>
+            <color>(125,75,125)</color>
+         </TerrainDef>
+         <TerrainDef ParentName="CarpetBase">
+            <defName>VFEArch_CarpetBlack</defName>
+            <label>black carpet</label>
+            <renderPrecedence>198</renderPrecedence>
+            <description>Mysterious black plush carpet. Very stylish.</description>
+            <color>(255,255,255)</color>
+         </TerrainDef>
+         <TerrainDef ParentName="CarpetBase">
+            <defName>VFEArch_CarpetDarkRed</defName>
+            <label>dark red carpet</label>
+            <renderPrecedence>197</renderPrecedence>
+            <description>Rebelious-looking dark red carpet.</description>
+            <color>(91,45,45)</color>
+         </TerrainDef>
+         <TerrainDef ParentName="CarpetBase">
+            <defName>VFEArch_CarpetOrange</defName>
+            <label>orange carpet</label>
+            <renderPrecedence>196</renderPrecedence>
+            <description>Bold and inspiring orange carpet.</description>
+            <color>(155,103,0)</color>
+         </TerrainDef>
+         <TerrainDef ParentName="CarpetBase">
+            <defName>VFEArch_CarpetGreenish</defName>
+            <label>greenish carpet</label>
+            <renderPrecedence>196</renderPrecedence>
+            <description>Naturalistic-feeling greenish carpet. Swamp tones, dude.</description> <!-- there's basically the same "dude" part in the vanilla green carpet description! :P -->
+            <color>(71,106,82)</color>
+         </TerrainDef>
+         <TerrainDef ParentName="CarpetBase">
+            <defName>VFEArch_CarpetBrown</defName>
+            <label>brown carpet</label>
+            <renderPrecedence>196</renderPrecedence>
+            <description>Cozy-looking brown carpet.</description>
+            <color>(71,106,82)</color>
+         </TerrainDef>
+      </value>
+   </Operation>
+</Patch>
