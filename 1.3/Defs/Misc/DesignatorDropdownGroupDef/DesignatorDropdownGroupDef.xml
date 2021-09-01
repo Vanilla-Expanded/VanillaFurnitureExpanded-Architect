@@ -25,5 +25,10 @@
     <defName>VFEArch_StoneSlabs</defName>
     <label>stone slabs</label>
   </DesignatorDropdownGroupDef>
+  
+  <DesignatorDropdownGroupDef>
+    <defName>VFEArch_PicketFence</defName>
+    <label>picket fence</label>
+  </DesignatorDropdownGroupDef>
 
 </Defs>
