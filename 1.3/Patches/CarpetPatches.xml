@@ -18,10 +18,10 @@
             <color>(125,75,125)</color>
          </TerrainDef>
          <TerrainDef ParentName="CarpetBase">
-            <defName>VFEArch_CarpetBlack</defName>
-            <label>black carpet</label>
+            <defName>VFEArch_CarpetWhite</defName>
+            <label>white carpet</label>
             <renderPrecedence>198</renderPrecedence>
-            <description>Mysterious black plush carpet. Very stylish.</description>
+            <description>Exalted white plush carpet. Very stylish.</description>
             <color>(255,255,255)</color>
          </TerrainDef>
          <TerrainDef ParentName="CarpetBase">
