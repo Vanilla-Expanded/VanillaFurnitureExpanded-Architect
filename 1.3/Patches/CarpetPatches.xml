@@ -50,7 +50,7 @@
             <label>brown carpet</label>
             <renderPrecedence>196</renderPrecedence>
             <description>Cozy-looking brown carpet.</description>
-            <color>(71,106,82)</color>
+            <color>(100,81,67)</color>
          </TerrainDef>
       </value>
    </Operation>
