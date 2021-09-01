@@ -20,5 +20,10 @@
     <defName>VFEArch_PolishedStoneFloor</defName>
     <label>polished stone floor</label>
   </DesignatorDropdownGroupDef>
+  
+  <DesignatorDropdownGroupDef>
+    <defName>VFEArch_StoneSlabs</defName>
+    <label>stone slabs</label>
+  </DesignatorDropdownGroupDef>
 
 </Defs>
