@@ -275,5 +275,86 @@ Picket fences are considerably more beautiful than alternatives, and evoke a nic
 	  <color>(134,79,49)</color>
     </graphicData>
   </ThingDef>
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>VFEArch_BrickFence</defName>
+    <label>brick fence</label>
+    <description>A brick fence made tall brick pillars and a short fence in between them, used for building pens for certain kinds of animals. Some kinds of animals can get past fences. Predators will not hunt creatures on the other side of a fence, but may still wander inside.</description>
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+    <graphicData>
+      <texPath>Fences/BrickFence/BrickFence_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <linkType>Asymmetric</linkType>
+      <linkFlags>
+        <li>Fences</li>
+      </linkFlags>
+      <asymmetricLink>
+        <linkFlags>
+          <li>Wall</li>
+          <li>Rock</li>
+        </linkFlags>
+        <linkToDoors>true</linkToDoors>
+        <drawDoorBorderEast>
+          <color>(0,0,0)</color>
+          <size>(0.04, 0.77)</size>
+          <offset>(0.5, 0, -0.08)</offset>
+        </drawDoorBorderEast>
+        <drawDoorBorderWest>
+          <color>(0,0,0)</color>
+          <size>(0.04, 0.77)</size>
+          <offset>(-0.5, 0, -0.08)</offset>
+        </drawDoorBorderWest>
+      </asymmetricLink>
+      <shadowData>
+        <volume>(0.3, 0.5, 0.3)</volume>
+        <offset>(0,0,-0.23)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0.35,0.1,0.3,0.7)</rect>
+      </damageData>
+    </graphicData>
+    <uiIconPath>Fences/BrickFence/BrickFence_MenuIcon</uiIconPath>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>140</WorkToBuild>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <costStuffCount>1</costStuffCount>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>140</pathCost>
+    <blockWind>false</blockWind>
+    <fillPercent>0.25</fillPercent>
+    <placingDraggableDimensions>1</placingDraggableDimensions>
+    <tickerType>Never</tickerType>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <useStuffTerrainAffordance>true</useStuffTerrainAffordance>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory>Structure</designationCategory>
+    <canOverlapZones>false</canOverlapZones>
+    <fertility>0</fertility>
+    <stuffCategories>
+      <li>Stony</li>
+    </stuffCategories>
+    <building>
+      <isInert>true</isInert>
+      <isFence>true</isFence>
+      <isPlaceOverableWall>true</isPlaceOverableWall>
+      <ai_chillDestination>false</ai_chillDestination>
+      <ai_neverTrashThis>true</ai_neverTrashThis>
+      <relatedBuildCommands>
+        <li>PenMarker</li>
+        <li>FenceGate</li>
+      </relatedBuildCommands>
+      <blueprintGraphicData>
+        <texPath>Fences/BrickFence/BrickFence_Blueprint_Atlas</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+      </blueprintGraphicData>
+    </building>
+  </ThingDef>
 
 </Defs>
