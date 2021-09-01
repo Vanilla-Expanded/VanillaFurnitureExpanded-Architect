@@ -172,6 +172,7 @@
     <defName>VFEArch_PicketFence</defName>
     <label>picket fence</label>
     <description>A fence made of posts joined by vertical wooden boards called pickets, used for building pens for certain kinds of animals. Some kinds of animals can get past fences. Predators will not hunt creatures on the other side of a fence, but may still wander inside.
+	
 Picket fences are considerably more beautiful than alternatives, and evoke a nice, homely feeling.</description>
     <thingClass>Building</thingClass>
     <category>Building</category>
