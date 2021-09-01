@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+   <Operation Class="PatchOperationFindMod">
+      <mods>
+         <li>Royalty</li>
+      </mods>
+      <match Class="PatchOperationSequence">
+         <operations>
+            <li Class="PatchOperationAdd">
+               <xpath>/Defs</xpath>
+               <value>
+                  <TerrainDef ParentName="CarpetFineBase">
+                     <defName>VFEArch_CarpetFineAzure</defName>
+                     <label>fine azure carpet</label>
+                     <renderPrecedence>200</renderPrecedence>
+                     <description>todo.</description>
+                     <color>(24,65,121)</color>
+                  </TerrainDef>
+                  <TerrainDef ParentName="CarpetFineBase">
+                     <defName>VFEArch_CarpetFineViridescent</defName>
+                     <label>fine viridescent carpet</label>
+                     <renderPrecedence>199</renderPrecedence>
+                     <description>todo.</description>
+                     <color>(89,105,62)</color>
+                  </TerrainDef>
+                  <TerrainDef ParentName="CarpetFineBase">
+                     <defName>VFEArch_CarpetFineCrimson</defName>
+                     <label>fine crimson carpet</label>
+                     <renderPrecedence>198</renderPrecedence>
+                     <description>todo.</description>
+                     <color>(118,49,57)</color>
+                  </TerrainDef>
+                  <TerrainDef ParentName="CarpetFineBase">
+                     <defName>VFEArch_CarpetFineMilky</defName>
+                     <label>fine milky carpet</label>
+                     <renderPrecedence>200</renderPrecedence>
+                     <description>A tender, soft fine carpet in a milky tone.</description>
+                     <color>(195,192,176)</color>
+                  </TerrainDef>
+                  <TerrainDef ParentName="CarpetFineBase">
+                     <defName>VFEArch_CarpetFineAshen</defName>
+                     <label>fine ashen carpet</label>
+                     <renderPrecedence>199</renderPrecedence>
+                     <description>todo.</description>
+                     <color>(81,81,81)</color>
+                  </TerrainDef>
+                  <TerrainDef ParentName="CarpetFineBase">
+                     <defName>VFEArch_CarpetFineBlonde</defName>
+                     <label>fine blonde carpet</label>
+                     <renderPrecedence>198</renderPrecedence>
+                     <description>todo.</description>
+                     <color>(150,146,8)</color>
+                  </TerrainDef>
+                  <TerrainDef ParentName="CarpetFineBase">
+                     <defName>VFEArch_CarpetFineAmber</defName>
+                     <label>fine amber carpet</label>
+                     <renderPrecedence>200</renderPrecedence>
+                     <description>todo.</description>
+                     <color>(155,103,0)</color>
+                  </TerrainDef>
+                  <TerrainDef ParentName="CarpetFineBase">
+                     <defName>VFEArch_CarpetFineFeldgrau</defName>
+                     <label>fine feldgrau carpet</label>
+                     <renderPrecedence>199</renderPrecedence>
+                     <description>todo.</description>
+                     <color>(71,106,82)</color>
+                  </TerrainDef>
+                  <TerrainDef ParentName="CarpetFineBase">
+                     <defName>VFEArch_CarpetFineHazel</defName>
+                     <label>fine hazel carpet</label>
+                     <renderPrecedence>198</renderPrecedence>
+                     <description>todo.</description>
+                     <color>(100,81,67)</color>
+                  </TerrainDef>
+               </value>
+            </li>
+         </operations>
+      </match>
+   </Operation>
+</Patch>

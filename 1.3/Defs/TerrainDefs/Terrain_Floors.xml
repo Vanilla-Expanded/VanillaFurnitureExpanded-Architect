@@ -98,7 +98,7 @@
   
   <!--====================================== Cobblestone floor =======================================-->
   
-  <TerrainDef Abstract="True" ParentName="FloorBase" Name="FlagstoneBase">
+  <TerrainDef Abstract="True" ParentName="FloorBase" Name="CobblestoneBase">
     <renderPrecedence>220</renderPrecedence>
     <description>Tiles made out of chipped stones. These are not beautiful, but they make good surfaces for roads and outdoor walkways. Deconstructing cobblestone flooring yields no resources.</description>
     <texturePath>Terrains/Cobblestone</texturePath>
@@ -113,7 +113,7 @@
     </tags>
   </TerrainDef>
 
-  <TerrainDef ParentName="FlagstoneBase">
+  <TerrainDef ParentName="CobblestoneBase">
     <defName>VFEArch_CobblestoneFloorSandstone</defName>
     <label>sandstone cobblestone floor</label>
     <color>(126,104,94)</color>
@@ -122,7 +122,7 @@
     </costList>
   </TerrainDef>
 
-  <TerrainDef ParentName="FlagstoneBase">
+  <TerrainDef ParentName="CobblestoneBase">
     <defName>VFEArch_CobblestoneFloorGranite</defName>
     <label>granite cobblestone floor</label>
     <color>(105,95,97)</color>
@@ -131,7 +131,7 @@
     </costList>
   </TerrainDef>
 
-  <TerrainDef ParentName="FlagstoneBase">
+  <TerrainDef ParentName="CobblestoneBase">
     <defName>VFEArch_CobblestoneFloorLimestone</defName>
     <label>limestone cobblestone floor</label>
     <color>(158,153,135)</color>
@@ -140,7 +140,7 @@
     </costList>
   </TerrainDef>
 
-  <TerrainDef ParentName="FlagstoneBase">
+  <TerrainDef ParentName="CobblestoneBase">
     <defName>VFEArch_CobblestoneFloorSlate</defName>
     <label>slate cobblestone floor</label>
     <color>(105,105,105)</color>
@@ -149,7 +149,7 @@
     </costList>
   </TerrainDef>
 
-  <TerrainDef ParentName="FlagstoneBase">
+  <TerrainDef ParentName="CobblestoneBase">
     <defName>VFEArch_CobblestoneFloorMarble</defName>
     <label>marble cobblestone floor</label>
     <color>(132,135,132)</color>
@@ -160,7 +160,7 @@
   
   <!--====================================== Polished stone floor =======================================-->
   
-  <TerrainDef Abstract="True" ParentName="FloorBase" Name="FlagstoneBase">
+  <TerrainDef Abstract="True" ParentName="FloorBase" Name="PolishedStoneFloorBase">
     <renderPrecedence>220</renderPrecedence>
     <description>Betiful stony tiles polished to a shine. Checkered.</description>
     <texturePath>Terrains/PolishedStoneFloor</texturePath>
@@ -171,7 +171,7 @@
     <designatorDropdown>VFEArch_PolishedStoneFloor</designatorDropdown>
   </TerrainDef>
 
-  <TerrainDef ParentName="FlagstoneBase">
+  <TerrainDef ParentName="PolishedStoneFloorBase">
     <defName>VFEArch_PolishedStoneFloorSandstone</defName>
     <label>sandstone polished stone floor</label>
     <color>(126,104,94)</color>
@@ -180,7 +180,7 @@
     </costList>
   </TerrainDef>
 
-  <TerrainDef ParentName="FlagstoneBase">
+  <TerrainDef ParentName="PolishedStoneFloorBase">
     <defName>VFEArch_PolishedStoneFloorGranite</defName>
     <label>granite polished stone floor</label>
     <color>(105,95,97)</color>
@@ -189,7 +189,7 @@
     </costList>
   </TerrainDef>
 
-  <TerrainDef ParentName="FlagstoneBase">
+  <TerrainDef ParentName="PolishedStoneFloorBase">
     <defName>VFEArch_PolishedStoneFloorLimestone</defName>
     <label>limestone polished stone floor</label>
     <color>(158,153,135)</color>
@@ -198,7 +198,7 @@
     </costList>
   </TerrainDef>
 
-  <TerrainDef ParentName="FlagstoneBase">
+  <TerrainDef ParentName="PolishedStoneFloorBase">
     <defName>VFEArch_PolishedStoneFloorSlate</defName>
     <label>slate polished stone floor</label>
     <color>(105,105,105)</color>
@@ -207,12 +207,74 @@
     </costList>
   </TerrainDef>
 
-  <TerrainDef ParentName="FlagstoneBase">
+  <TerrainDef ParentName="PolishedStoneFloorBase">
     <defName>VFEArch_PolishedStoneFloorMarble</defName>
     <label>marble polished stone floor</label>
     <color>(132,135,132)</color>
     <costList>
       <BlocksMarble>12</BlocksMarble>
+    </costList>
+  </TerrainDef>
+  
+  <!--====================================== Stone slabs =======================================-->
+  
+  <TerrainDef Abstract="True" ParentName="FloorBase" Name="StoneSlabsBase">
+    <renderPrecedence>220</renderPrecedence>
+    <description>Carefully polished and fit stone slabs for an ascetic yet exalted feeling. They are pretty to look at, but they take a long time to lay.</description>
+    <texturePath>Terrains/StoneSlabs</texturePath>
+    <statBases>
+      <WorkToBuild>1100</WorkToBuild>
+      <Beauty>1</Beauty>
+    </statBases>
+    <designatorDropdown>VFEArch_StoneSlabs</designatorDropdown>
+    <researchPrerequisites>
+      <li>Stonecutting</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="StoneSlabsBase">
+    <defName>VFEArch_SlabsSandstone</defName>
+    <label>sandstone slabs</label>
+    <color>(126,104,94)</color>
+    <costList>
+      <BlocksSandstone>4</BlocksSandstone>
+    </costList>
+  </TerrainDef>
+
+  <TerrainDef ParentName="StoneSlabsBase">
+    <defName>VFEArch_SlabsGranite</defName>
+    <label>granite slabs</label>
+    <color>(105,95,97)</color>
+    <costList>
+      <BlocksGranite>4</BlocksGranite>
+    </costList>
+  </TerrainDef>
+
+  <TerrainDef ParentName="StoneSlabsBase">
+    <defName>VFEArch_SlabsLimestone</defName>
+    <label>limestone slabs</label>
+    <color>(158,153,135)</color>
+    <costList>
+      <BlocksLimestone>4</BlocksLimestone>
+    </costList>
+  </TerrainDef>
+
+  <TerrainDef ParentName="StoneSlabsBase">
+    <defName>VFEArch_SlabsSlate</defName>
+    <label>slate slabs</label>
+    <color>(100,100,100)</color>
+    <costList>
+      <BlocksSlate>4</BlocksSlate>
+  </costList>
+  </TerrainDef>
+
+  <TerrainDef ParentName="StoneSlabsBase">
+    <defName>VFEArch_SlabsMarble</defName>
+    <label>marble slabs</label>
+    <color>(132,135,132)</color>
+    <costList>
+      <BlocksMarble>4</BlocksMarble>
     </costList>
   </TerrainDef>
   
