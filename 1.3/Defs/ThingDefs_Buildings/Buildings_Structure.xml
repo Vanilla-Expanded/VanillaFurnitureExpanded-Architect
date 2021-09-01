@@ -135,7 +135,7 @@
     <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
     <altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
-    <pathCost>160</pathCost>
+    <pathCost>140</pathCost>
     <blockWind>false</blockWind>
     <fillPercent>0.25</fillPercent>
     <placingDraggableDimensions>1</placingDraggableDimensions>
@@ -217,7 +217,7 @@ Picket fences are considerably more beautiful than alternatives, and evoke a nic
     <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
     <altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
-    <pathCost>160</pathCost>
+    <pathCost>70</pathCost>
     <blockWind>false</blockWind>
     <fillPercent>0.25</fillPercent>
     <placingDraggableDimensions>1</placingDraggableDimensions>
