@@ -4,8 +4,7 @@
   <TerrainDef Abstract="True" Name="StoneBridgeBase">
     <description>Stone Bridges are structures that can be built on water. Bridges allow more rapid movement across water. Once built, they can support many structures, including heavy structures and any type of wall. Bridges allow for easier building in swampy biomes. Floors may not be built atop bridges.
 	
-Can be made out of any stone blocks.
-</description>
+Can be made out of any stone blocks.</description>
     <texturePath>StoneBridge/StoneBridge</texturePath>
     <uiIconPath>StoneBridge/StoneBridge_MenuIcon</uiIconPath>
     <layerable>true</layerable>
@@ -135,7 +134,7 @@ Can be made out of any stone blocks.
     </costList>
   </TerrainDef>
   
-  <TerrainDef Abstract="True" Name="SteelBridgeBase">
+  <TerrainDef Abstract="True">
     <defName>VFEArch_ConcreteFoundation</defName>
     <label>steel bridge</label>
     <description>Foundations are structures that can be built on mud, quicksand etc. Foundation allows more rapid movement across these normally slowing ground types. Once built, they can support many structures, including heavy structures and any other type of wall. Foundations allow for easier building in desert and swampy biomes. Floors may be built atop foundations.</description>
