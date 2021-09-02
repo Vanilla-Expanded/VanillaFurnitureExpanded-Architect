@@ -407,7 +407,7 @@ Picket fences are considerably more beautiful than alternatives, and evoke a nic
     <uiIconPath>Fences/InvisibleFence_MenuIcon</uiIconPath>
     <statBases>
       <MaxHitPoints>1</MaxHitPoints>
-      <WorkToBuild>140</WorkToBuild>
+      <WorkToBuild>5</WorkToBuild>
       <Flammability>1.0</Flammability>
     </statBases>
     <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
