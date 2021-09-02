@@ -9,26 +9,57 @@
             <li Class="PatchOperationAdd">
                <xpath>/Defs</xpath>
                <value>
-                  <TerrainDef ParentName="FloorBase">
-                     <defName>VFEArch_FineMetalTile</defName>
-                     <label>fine metal tile</label>
-                     <description>Fine steel plates with a royal pattern for that luxurious look.</description>
+                  <TerrainDef ParentName="FloorBase" Name="FineMetalTileBase" Abstract="True">
+                     <description>Fine metal plates with a royal pattern for that luxurious look.</description>
                      <texturePath>Terrains/FineMetalTile</texturePath>
                      <renderPrecedence>228</renderPrecedence>
                      <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
-                     <color>(105,105,105)</color>
-                     <costList>
-                        <Steel>20</Steel>
-                     </costList>
-                     <statBases>
-                        <WorkToBuild>5000</WorkToBuild>
-                        <Beauty>3</Beauty>
-                     </statBases>
                      <tags>
                         <li>FineFloor</li>
                      </tags>
                   </TerrainDef>
-				  
+                  <TerrainDef ParentName="FineMetalTileBase">
+                     <defName>VFEArch_FineSteelTile</defName>
+                     <label>fine steel tile</label>
+                     <renderPrecedence>241</renderPrecedence>
+                     <color>(105,105,105)</color>
+                     <statBases>
+                        <Beauty>3</Beauty>
+                        <WorkToBuild>800</WorkToBuild>
+                        <Cleanliness>0.2</Cleanliness>
+                     </statBases>
+                     <costList>
+                        <Steel>20</Steel>
+                     </costList>
+                  </TerrainDef>
+                  <TerrainDef ParentName="FineMetalTileBase">
+                     <defName>VFEArch_FineSilverTile</defName>
+                     <label>fine silver tile</label>
+                     <renderPrecedence>241</renderPrecedence>
+                     <color>(0.45, 0.45, 0.45)</color>
+                     <statBases>
+                        <Beauty>7</Beauty>
+                        <WorkToBuild>800</WorkToBuild>
+                        <Cleanliness>0.2</Cleanliness>
+                     </statBases>
+                     <costList>
+                        <Silver>200</Silver>
+                     </costList>
+                  </TerrainDef>
+                  <TerrainDef ParentName="FineMetalTileBase">
+                     <defName>VFEArch_FineGoldTile</defName>
+                     <label>fine gold tile</label>
+                     <renderPrecedence>241</renderPrecedence>
+                     <color>(0.65, 0.65, 0.35)</color>
+                     <statBases>
+                        <Beauty>14</Beauty>
+                        <WorkToBuild>800</WorkToBuild>
+                        <Cleanliness>0.2</Cleanliness>
+                     </statBases>
+                     <costList>
+                        <Gold>200</Gold>
+                     </costList>
+                  </TerrainDef>
                   <TerrainDef ParentName="FloorBase">
                      <defName>VFEArch_FineWoodenFloor</defName>
                      <label>fine wooden floor</label>
@@ -50,7 +81,6 @@
                      <constructEffect>ConstructWood</constructEffect>
                      <designatorDropdown>VFEArch_FineWoodenFloor</designatorDropdown>
                   </TerrainDef>
-				  
                   <TerrainDef ParentName="FloorBase">
                      <defName>VFEArch_FineWoodenFloorWalnut</defName>
                      <label>walnut fine wooden floor</label>
@@ -72,7 +102,6 @@
                      <constructEffect>ConstructWood</constructEffect>
                      <designatorDropdown>VFEArch_FineWoodenFloor</designatorDropdown>
                   </TerrainDef>
-				  
                   <TerrainDef ParentName="FloorBase">
                      <defName>VFEArch_FineWoodenFloorBirch</defName>
                      <label>birch fine wooden floor</label>
@@ -94,7 +123,6 @@
                      <constructEffect>ConstructWood</constructEffect>
                      <designatorDropdown>VFEArch_FineWoodenFloor</designatorDropdown>
                   </TerrainDef>
-				  
                   <TerrainDef ParentName="FloorBase">
                      <defName>VFEArch_FineWoodenFloorMahogany</defName>
                      <label>mahogany fine wooden floor</label>
@@ -116,12 +144,10 @@
                      <constructEffect>ConstructWood</constructEffect>
                      <designatorDropdown>VFEArch_FineWoodenFloor</designatorDropdown>
                   </TerrainDef>
-				  
                   <DesignatorDropdownGroupDef>
                      <defName>VFEArch_FineWoodenFloor</defName>
                      <label>fine wooden floor</label>
                   </DesignatorDropdownGroupDef>
-				  
                   <ThingDef ParentName="BuildingBase">
                      <defName>VFEArch_FineWall</defName>
                      <label>fine wall</label>
