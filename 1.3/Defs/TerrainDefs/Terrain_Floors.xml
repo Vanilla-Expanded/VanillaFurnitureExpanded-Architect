@@ -13,21 +13,18 @@
          <WorkToBuild>100</WorkToBuild>
       </statBases>
       <costList>
-         <Steel>1</Steel>
+         <Steel>2</Steel>
       </costList>
       <researchPrerequisites>
          <li>Stonecutting</li>
       </researchPrerequisites>
    </TerrainDef>
    
-   <TerrainDef ParentName="FloorBase">
-      <defName>VFEArch_WoodenParquet</defName>
-      <label>wooden parquet</label>
+   <TerrainDef ParentName="FloorBase" Name="VFEArch_WoodenParquetBase" Abstract="True">
       <description>Nicely looking wooden planks laid out at an angle.</description>
       <texturePath>Terrains/Parquet</texturePath>
       <renderPrecedence>228</renderPrecedence>
       <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
-      <color>(108,78,55)</color>
       <costList>
          <WoodLog>12</WoodLog>
       </costList>
@@ -36,6 +33,31 @@
          <Beauty>2</Beauty>
       </statBases>
       <constructEffect>ConstructWood</constructEffect>
+	  <designatorDropdown>VFEArch_WoodenParquet</designatorDropdown>
+   </TerrainDef>
+   
+   <TerrainDef ParentName="VFEArch_WoodenParquetBase">
+      <defName>VFEArch_WoodenParquet</defName>
+      <label>wooden parquet</label>
+      <color>(108,78,55)</color>
+   </TerrainDef>
+   
+   <TerrainDef ParentName="VFEArch_WoodenParquetBase">
+      <defName>VFEArch_WoodenParquetWalnut</defName>
+      <label>walnut parquet</label>
+      <color>(79,60,45)</color>
+   </TerrainDef>
+   
+   <TerrainDef ParentName="VFEArch_WoodenParquetBase">
+      <defName>VFEArch_WoodenParquetBirch</defName>
+      <label>birch parquet</label>
+      <color>(243,196,150)</color>
+   </TerrainDef>
+   
+   <TerrainDef ParentName="VFEArch_WoodenParquetBase">
+      <defName>VFEArch_WoodenParquetMahogany</defName>
+      <label>mahogany parquet</label>
+      <color>(134,79,49)</color>
    </TerrainDef>
    
    <!--Wooden floor colour variations-->
@@ -224,7 +246,7 @@
     <texturePath>Terrains/StoneSlabs</texturePath>
     <statBases>
       <WorkToBuild>1100</WorkToBuild>
-      <Beauty>1</Beauty>
+      <Beauty>2</Beauty>
     </statBases>
     <designatorDropdown>VFEArch_StoneSlabs</designatorDropdown>
     <researchPrerequisites>
@@ -238,7 +260,7 @@
     <label>sandstone slabs</label>
     <color>(126,104,94)</color>
     <costList>
-      <BlocksSandstone>4</BlocksSandstone>
+      <BlocksSandstone>8</BlocksSandstone>
     </costList>
   </TerrainDef>
 
@@ -247,7 +269,7 @@
     <label>granite slabs</label>
     <color>(105,95,97)</color>
     <costList>
-      <BlocksGranite>4</BlocksGranite>
+      <BlocksGranite>8</BlocksGranite>
     </costList>
   </TerrainDef>
 
@@ -256,7 +278,7 @@
     <label>limestone slabs</label>
     <color>(158,153,135)</color>
     <costList>
-      <BlocksLimestone>4</BlocksLimestone>
+      <BlocksLimestone>8</BlocksLimestone>
     </costList>
   </TerrainDef>
 
@@ -265,7 +287,7 @@
     <label>slate slabs</label>
     <color>(100,100,100)</color>
     <costList>
-      <BlocksSlate>4</BlocksSlate>
+      <BlocksSlate>8</BlocksSlate>
   </costList>
   </TerrainDef>
 
@@ -274,7 +296,7 @@
     <label>marble slabs</label>
     <color>(132,135,132)</color>
     <costList>
-      <BlocksMarble>4</BlocksMarble>
+      <BlocksMarble>8</BlocksMarble>
     </costList>
   </TerrainDef>
   

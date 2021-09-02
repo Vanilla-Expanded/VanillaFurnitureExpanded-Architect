@@ -17,6 +17,7 @@
                      <tags>
                         <li>FineFloor</li>
                      </tags>
+					 <designatorDropdown>VFEArch_FineMetalFloor</designatorDropdown>
                   </TerrainDef>
                   <TerrainDef ParentName="FineMetalTileBase">
                      <defName>VFEArch_FineSteelTile</defName>
@@ -60,6 +61,10 @@
                         <Gold>200</Gold>
                      </costList>
                   </TerrainDef>
+                  <DesignatorDropdownGroupDef>
+                     <defName>VFEArch_FineMetalFloor</defName>
+                     <label>fine metal floor</label>
+                  </DesignatorDropdownGroupDef>
                   <TerrainDef ParentName="FloorBase">
                      <defName>VFEArch_FineWoodenFloor</defName>
                      <label>fine wooden floor</label>

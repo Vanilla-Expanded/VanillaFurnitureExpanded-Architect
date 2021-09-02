@@ -309,7 +309,7 @@ Picket fences are considerably more beautiful than alternatives, and evoke a nic
     <selectable>true</selectable>
     <neverMultiSelect>true</neverMultiSelect>
     <useStuffTerrainAffordance>true</useStuffTerrainAffordance>
-    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <designationCategory>Structure</designationCategory>
     <canOverlapZones>false</canOverlapZones>
     <fertility>0</fertility>
@@ -388,7 +388,6 @@ Picket fences are considerably more beautiful than alternatives, and evoke a nic
     <rotatable>false</rotatable>
     <selectable>true</selectable>
     <neverMultiSelect>true</neverMultiSelect>
-    <useStuffTerrainAffordance>true</useStuffTerrainAffordance>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <designationCategory>Structure</designationCategory>
     <canOverlapZones>false</canOverlapZones>

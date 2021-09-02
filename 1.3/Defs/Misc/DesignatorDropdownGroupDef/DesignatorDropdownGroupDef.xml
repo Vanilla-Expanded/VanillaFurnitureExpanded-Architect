@@ -30,5 +30,10 @@
     <defName>VFEArch_PicketFence</defName>
     <label>picket fence</label>
   </DesignatorDropdownGroupDef>
+  
+  <DesignatorDropdownGroupDef>
+    <defName>VFEArch_WoodenParquet</defName>
+    <label>wooden parquet</label>
+  </DesignatorDropdownGroupDef>
 
 </Defs>
