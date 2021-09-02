@@ -35,5 +35,10 @@
     <defName>VFEArch_WoodenParquet</defName>
     <label>wooden parquet</label>
   </DesignatorDropdownGroupDef>
+  
+  <DesignatorDropdownGroupDef>
+    <defName>VFEArch_WoolCarpet</defName>
+    <label>wooly carpet</label>
+  </DesignatorDropdownGroupDef>
 
 </Defs>
