@@ -173,6 +173,7 @@ Can be made out of any stone blocks.</description>
         <loopPath>SteelBridge/SteelBridgeProps_Loop</loopPath>
         <rightPath>SteelBridge/SteelBridgeProps_Right</rightPath>
       </li>
+      <li Class="VFEArchitect.TerrainExtension_Foundation" />
     </modExtensions>
   </TerrainDef>
 

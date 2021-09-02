@@ -407,6 +407,9 @@ Picket fences are considerably more beautiful than alternatives, and evoke a nic
         <graphicClass>Graphic_Single</graphicClass>
       </blueprintGraphicData>
     </building>
+    <modExtensions>
+      <li Class="VFEArchitect.BuildExtension_RequireGodMode" />
+    </modExtensions>
   </ThingDef>
 
 </Defs>
