@@ -134,7 +134,7 @@ Can be made out of any stone blocks.</description>
     </costList>
   </TerrainDef>
   
-  <TerrainDef Abstract="True">
+  <TerrainDef>
     <defName>VFEArch_ConcreteFoundation</defName>
     <label>steel bridge</label>
     <description>Foundations are structures that can be built on mud, quicksand etc. Foundation allows more rapid movement across these normally slowing ground types. Once built, they can support many structures, including heavy structures and any other type of wall. Foundations allow for easier building in desert and swampy biomes. Floors may be built atop foundations.</description>
