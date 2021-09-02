@@ -4,7 +4,7 @@
   <TerrainDef ParentName="NaturalTerrainBase">
     <defName>VFEArch_Grass</defName>
     <label>grass</label>
-	<description>Green grass with patches of dirt. Takes some extent of work to make but no resources.</description>
+	<description>Field of grass with patches of soil here and there. Very pleasant to look at, it requires no resources to construct.</description>
     <texturePath>Terrains/Grass</texturePath>
     <edgeType>FadeRough</edgeType>
     <renderPrecedence>340</renderPrecedence>
@@ -12,7 +12,7 @@
 	<constructEffect>ConstructDirt</constructEffect>
     <statBases>
       <Beauty>0</Beauty>
-      <Cleanliness>-1</Cleanliness>
+      <Cleanliness>1</Cleanliness>
 	  <WorkToBuild>140</WorkToBuild>
     </statBases>
     <scatterType>Rocky</scatterType>
@@ -52,7 +52,7 @@
     <pathCost>1</pathCost>
 	<constructEffect>ConstructDirt</constructEffect>
     <statBases>
-      <Beauty>1</Beauty>
+      <Beauty>2</Beauty>
       <Cleanliness>-1</Cleanliness>
 	  <WorkToBuild>140</WorkToBuild>
     </statBases>

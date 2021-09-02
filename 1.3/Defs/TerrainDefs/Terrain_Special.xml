@@ -2,7 +2,10 @@
 <Defs>
 
   <TerrainDef Abstract="True" Name="StoneBridgeBase">
-    <description>A flat stony surface on supportive beams which can be built over water. You can build heavy structures on these bridges, but if a bridge falls, buildings on top of it fall as well.</description>
+    <description>Stone Bridges are structures that can be built on water. Bridges allow more rapid movement across water. Once built, they can support many structures, including heavy structures and any type of wall. Bridges allow for easier building in swampy biomes. Floors may not be built atop bridges.
+	
+Can be made out of any stone blocks.
+</description>
     <texturePath>StoneBridge/StoneBridge</texturePath>
     <uiIconPath>StoneBridge/StoneBridge_MenuIcon</uiIconPath>
     <layerable>true</layerable>
@@ -88,7 +91,7 @@
   </TerrainDef>
   
   <TerrainDef Abstract="True" Name="SteelBridgeBase">
-    <description>A flat steel surface on supportive beams which can be built over water. You can build heavy structures on these bridges, but if a bridge falls, buildings on top of it fall as well.</description>
+    <description>Steel Bridges are structures that can be built on water. Bridges allow more rapid movement across water. Once built, they can support many structures, including heavy structures and any other type of wall. Steel bridges are extremely durable. Bridges allow for easier building in swampy biomes. Floors may not be built atop bridges.</description>
     <texturePath>SteelBridge/SteelBridge</texturePath>
     <uiIconPath>SteelBridge/SteelBridge_MenuIcon</uiIconPath>
     <layerable>true</layerable>
@@ -130,6 +133,48 @@
     <costList>
       <Steel>12</Steel>
     </costList>
+  </TerrainDef>
+  
+  <TerrainDef Abstract="True" Name="SteelBridgeBase">
+    <defName>VFEArch_ConcreteFoundation</defName>
+    <label>steel bridge</label>
+    <description>Foundations are structures that can be built on mud, quicksand etc. Foundation allows more rapid movement across these normally slowing ground types. Once built, they can support many structures, including heavy structures and any other type of wall. Foundations allow for easier building in desert and swampy biomes. Floors may be built atop foundations.</description>
+    <texturePath>SteelBridge/SteelBridge</texturePath>
+    <uiIconPath>SteelBridge/SteelBridge_MenuIcon</uiIconPath>
+    <layerable>true</layerable>
+    <bridge>true</bridge>
+    <affordances>
+      <li>Light</li>
+	  <li>Medium</li>
+	  <li>Heavy</li>
+    </affordances>
+    <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+    <designationCategory>Structure</designationCategory>
+    <fertility>0</fertility>
+    <terrainAffordanceNeeded>Bridgeable</terrainAffordanceNeeded>
+    <edgeType>Hard</edgeType>
+    <renderPrecedence>400</renderPrecedence>
+    <autoRebuildable>true</autoRebuildable>
+    <statBases>
+      <WorkToBuild>3000</WorkToBuild>
+      <Flammability>0</Flammability>
+    </statBases>
+    <costList>
+      <Steel>20</Steel>
+    </costList>
+    <tags>
+      <li>Floor</li>
+    </tags>
+    <destroyOnBombDamageThreshold>50</destroyOnBombDamageThreshold>
+    <destroyBuildingsOnDestroyed>true</destroyBuildingsOnDestroyed>
+    <destroyEffect>Bridge_Collapse</destroyEffect>
+    <destroyEffectWater>Bridge_CollapseWater</destroyEffectWater>
+    <modExtensions>
+      <li Class="VFEArchitect.TerrainExtension_CustomBridgeProps">
+        <loopPath>SteelBridge/SteelBridgeProps_Loop</loopPath>
+        <rightPath>SteelBridge/SteelBridgeProps_Right</rightPath>
+      </li>
+    </modExtensions>
   </TerrainDef>
 
 </Defs>

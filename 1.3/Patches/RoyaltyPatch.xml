@@ -10,7 +10,7 @@
                <xpath>/Defs</xpath>
                <value>
                   <TerrainDef ParentName="FloorBase" Name="FineMetalTileBase" Abstract="True">
-                     <description>Fine metal plates with a royal pattern for that luxurious look.</description>
+                     <description>Exquisite metal tiles, made with no compromises, for expressing economic status. Slow to construct.</description>
                      <texturePath>Terrains/FineMetalTile</texturePath>
                      <renderPrecedence>228</renderPrecedence>
                      <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
@@ -68,7 +68,7 @@
                   <TerrainDef ParentName="FloorBase">
                      <defName>VFEArch_FineWoodenFloor</defName>
                      <label>fine wooden floor</label>
-                     <description>Fine wooden floor with exotic carvings for that luxurious look.</description>
+                     <description>Beautiful wooden parquet, made with no compromises, for expressing economic status. Slow to construct.</description>
                      <texturePath>Terrains/FineWoodenFloor</texturePath>
                      <renderPrecedence>228</renderPrecedence>
                      <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
@@ -89,7 +89,7 @@
                   <TerrainDef ParentName="FloorBase">
                      <defName>VFEArch_FineWoodenFloorWalnut</defName>
                      <label>walnut fine wooden floor</label>
-                     <description>Fine wooden floor with exotic carvings for that luxurious look.</description>
+                     <description>Beautiful wooden parquet, made with no compromises, for expressing economic status. Slow to construct.</description>
                      <texturePath>Terrains/FineWoodenFloor</texturePath>
                      <renderPrecedence>228</renderPrecedence>
                      <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
@@ -110,7 +110,7 @@
                   <TerrainDef ParentName="FloorBase">
                      <defName>VFEArch_FineWoodenFloorBirch</defName>
                      <label>birch fine wooden floor</label>
-                     <description>Fine wooden floor with exotic carvings for that luxurious look.</description>
+                     <description>Beautiful wooden parquet, made with no compromises, for expressing economic status. Slow to construct.</description>
                      <texturePath>Terrains/FineWoodenFloor</texturePath>
                      <renderPrecedence>228</renderPrecedence>
                      <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
@@ -131,7 +131,7 @@
                   <TerrainDef ParentName="FloorBase">
                      <defName>VFEArch_FineWoodenFloorMahogany</defName>
                      <label>mahogany fine wooden floor</label>
-                     <description>Fine wooden floor with exotic carvings for that luxurious look.</description>
+                     <description>Beautiful wooden parquet, made with no compromises, for expressing economic status. Slow to construct.</description>
                      <texturePath>Terrains/FineWoodenFloor</texturePath>
                      <renderPrecedence>228</renderPrecedence>
                      <constructionSkillPrerequisite>6</constructionSkillPrerequisite>

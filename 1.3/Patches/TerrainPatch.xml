@@ -4,10 +4,14 @@
     <Operation Class="PatchOperationAdd">
         <xpath>Defs/TerrainDef[defName="BrokenAsphalt"]</xpath>
         <value>
+		    <description>Old, broken apart asphalt, often found in the form of ancient highways around abandoned locations. Very easy to traverse for people and vehicles alike.</description>
             <costList>
               <Steel>1</Steel>
             </costList>
 			<designationCategory>Floors</designationCategory>
+			<researchPrerequisites>
+                <li>Stonecutting</li>
+            </researchPrerequisites>
 		</value>
     </Operation>
 	
@@ -22,6 +26,7 @@
         <xpath>Defs/TerrainDef[defName="PackedDirt"]</xpath>
         <value>
 			<designationCategory>Floors</designationCategory>
+			<description>Packed dirt, slightly enhancing movement speed, often forming paths around places of interest.</description>
 		</value>
     </Operation>
 	
