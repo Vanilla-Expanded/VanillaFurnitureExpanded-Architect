@@ -15,6 +15,7 @@
       <Beauty>0</Beauty>
       <Cleanliness>1</Cleanliness>
 	  <WorkToBuild>140</WorkToBuild>
+	  <Flammability>1</Flammability>
     </statBases>
     <scatterType>Rocky</scatterType>
     <affordances>
@@ -58,6 +59,7 @@
       <Beauty>2</Beauty>
       <Cleanliness>-1</Cleanliness>
 	  <WorkToBuild>2000</WorkToBuild>
+	  <Flammability>1</Flammability>
     </statBases>
     <scatterType>Rocky</scatterType>
     <affordances>
