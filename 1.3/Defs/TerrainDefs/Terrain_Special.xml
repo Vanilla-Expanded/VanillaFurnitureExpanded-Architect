@@ -179,6 +179,7 @@ Can be made out of any stone blocks.</description>
       <li Class="VFEArchitect.TerrainExtension_CustomBridgeProps">
         <loopPath>ConcreteFoundation/FoundationProps_Loop</loopPath>
         <rightPath>ConcreteFoundation/FoundationProps_Right</rightPath>
+        <alwaysShow>true</alwaysShow>
       </li>
       <li Class="VFEArchitect.TerrainExtension_Foundation" />
     </modExtensions>
