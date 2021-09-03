@@ -342,7 +342,7 @@ Picket fences are considerably more beautiful than alternatives, and evoke a nic
   <ThingDef ParentName="BuildingBase">
     <defName>VFEArch_InvisibleFence</defName>
     <label>invisible fence</label>
-    <description>Invisible fence for aesthetic purposes. Available in godmode.</description>
+    <description>An invisible fence, for players wanting to create their own pens without fences, or to make it so that rivers or trees act as fence barriers. Does not have any path cost - thus not slowing down pawns wanting to traverse through it.</description>
     <thingClass>Building</thingClass>
     <category>Building</category>
     <graphicData>
