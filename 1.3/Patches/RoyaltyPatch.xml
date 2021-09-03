@@ -156,7 +156,7 @@
                   <ThingDef ParentName="BuildingBase">
                      <defName>VFEArch_FineWall</defName>
                      <label>fine wall</label>
-                     <description>An impassable fine wall. Capable of holding up a roof.</description>
+                     <description>A beautiful, impassable wall. Capable of holding up a roof.</description>
                      <thingClass>Building</thingClass>
                      <category>Building</category>
                      <graphicData>

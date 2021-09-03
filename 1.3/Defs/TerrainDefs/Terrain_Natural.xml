@@ -48,7 +48,7 @@
   <TerrainDef ParentName="NaturalTerrainBase">
     <defName>VFEArch_LawnPlot</defName>
     <label>lawn plot</label>
-	<description>Beautifully trimmed grass. Takes no resources but a lot of work to make.</description>
+	<description>Beautifully trimmed grass with very high beauty value. Requires tremendous amounts of work to construct.</description>
     <texturePath>Terrains/Lawn</texturePath>
     <edgeType>FadeRough</edgeType>
     <renderPrecedence>340</renderPrecedence>
@@ -57,7 +57,7 @@
     <statBases>
       <Beauty>2</Beauty>
       <Cleanliness>-1</Cleanliness>
-	  <WorkToBuild>600</WorkToBuild>
+	  <WorkToBuild>2000</WorkToBuild>
     </statBases>
     <scatterType>Rocky</scatterType>
     <affordances>
