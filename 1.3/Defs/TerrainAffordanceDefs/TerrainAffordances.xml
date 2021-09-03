@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <TerrainAffordanceDef>
+    <defName>VFEArch_Foundation</defName>
+    <label>foundation</label>
+    <order>3450</order>
+  </TerrainAffordanceDef>
+  
+  <TerrainAffordanceDef>
+    <defName>VFEArch_Soil</defName>
+    <label>soil</label>
+    <order>3500</order>
+  </TerrainAffordanceDef>
+
+</Defs>
