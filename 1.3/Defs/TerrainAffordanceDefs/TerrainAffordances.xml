@@ -3,13 +3,13 @@
 
   <TerrainAffordanceDef>
     <defName>VFEArch_Foundation</defName>
-    <label>foundation</label>
+    <label>foundations</label>
     <order>3450</order>
   </TerrainAffordanceDef>
   
   <TerrainAffordanceDef>
     <defName>VFEArch_Soil</defName>
-    <label>soil</label>
+    <label>grass</label>
     <order>3500</order>
   </TerrainAffordanceDef>
 
