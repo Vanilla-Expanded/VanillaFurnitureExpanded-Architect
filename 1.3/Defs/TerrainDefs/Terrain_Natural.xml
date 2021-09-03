@@ -36,9 +36,7 @@
         <cooldownTime>1.5</cooldownTime>
       </li>
     </tools>
-    <affordances>
-      <li>VFEArch_Soil</li>
-    </affordances>
+    <terrainAffordanceNeeded>VFEArch_Soil</terrainAffordanceNeeded>
     <tags>
       <li>Soil</li>
     </tags>
@@ -80,9 +78,7 @@
         <cooldownTime>1.5</cooldownTime>
       </li>
     </tools>
-    <affordances>
-      <li>VFEArch_Soil</li>
-    </affordances>
+	<terrainAffordanceNeeded>VFEArch_Soil</terrainAffordanceNeeded>
     <tags>
       <li>Soil</li>
     </tags>

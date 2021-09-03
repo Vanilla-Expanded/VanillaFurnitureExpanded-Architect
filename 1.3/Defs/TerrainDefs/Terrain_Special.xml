@@ -7,7 +7,7 @@
 Can be made out of any stone blocks.</description>
     <texturePath>StoneBridge/StoneBridge</texturePath>
     <uiIconPath>StoneBridge/StoneBridge_MenuIcon</uiIconPath>
-    <layerable>true</layerable>
+    <layerable>false</layerable>
     <bridge>true</bridge>
     <affordances>
       <li>Light</li>
@@ -98,7 +98,7 @@ Can be made out of any stone blocks.</description>
     <description>Steel Bridges are structures that can be built on water. Bridges allow more rapid movement across water. Once built, they can support many structures, including heavy structures and any other type of wall. Steel bridges are extremely durable. Bridges allow for easier building in swampy biomes. Floors may not be built atop bridges.</description>
     <texturePath>SteelBridge/SteelBridge</texturePath>
     <uiIconPath>SteelBridge/SteelBridge_MenuIcon</uiIconPath>
-    <layerable>true</layerable>
+    <layerable>false</layerable>
     <bridge>true</bridge>
     <affordances>
       <li>Light</li>
@@ -146,7 +146,6 @@ Can be made out of any stone blocks.</description>
     <texturePath>SteelBridge/SteelBridge</texturePath>
     <uiIconPath>SteelBridge/SteelBridge_MenuIcon</uiIconPath>
     <layerable>true</layerable>
-    <bridge>true</bridge>
     <affordances>
       <li>Light</li>
 	  <li>Medium</li>
