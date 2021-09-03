@@ -370,7 +370,7 @@ Picket fences are considerably more beautiful than alternatives, and evoke a nic
         </drawDoorBorderWest>
       </asymmetricLink>
       <shadowData>
-        <volume>(0.3, 0.5, 0.3)</volume>
+        <volume>(0, 0, 0)</volume>
         <offset>(0,0,-0.23)</offset>
       </shadowData>
       <damageData>
