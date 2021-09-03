@@ -143,8 +143,8 @@ Can be made out of any stone blocks.</description>
     <defName>VFEArch_ConcreteFoundation</defName>
     <label>concrete foundation</label>
     <description>Foundations are structures that can be built on mud, quicksand etc. Foundation allows more rapid movement across these normally slowing ground types. Once built, they can support many structures, including heavy structures and any other type of wall. Foundations allow for easier building in desert and swampy biomes. Floors may be built atop foundations.</description>
-    <texturePath>SteelBridge/SteelBridge</texturePath>
-    <uiIconPath>SteelBridge/SteelBridge_MenuIcon</uiIconPath>
+    <texturePath>Terrain/Surfaces/Concrete</texturePath>
+    <uiIconPath>ConcreteFoundation/Foundation_MenuIcon</uiIconPath>
     <layerable>true</layerable>
     <affordances>
       <li>Light</li>
@@ -177,8 +177,8 @@ Can be made out of any stone blocks.</description>
     </researchPrerequisites>
     <modExtensions>
       <li Class="VFEArchitect.TerrainExtension_CustomBridgeProps">
-        <loopPath>SteelBridge/SteelBridgeProps_Loop</loopPath>
-        <rightPath>SteelBridge/SteelBridgeProps_Right</rightPath>
+        <loopPath>ConcreteFoundation/FoundationProps_Loop</loopPath>
+        <rightPath>ConcreteFoundation/FoundationProps_Right</rightPath>
       </li>
       <li Class="VFEArchitect.TerrainExtension_Foundation" />
     </modExtensions>

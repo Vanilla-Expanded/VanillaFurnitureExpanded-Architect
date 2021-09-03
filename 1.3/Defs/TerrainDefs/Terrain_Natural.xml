@@ -10,6 +10,7 @@
     <renderPrecedence>340</renderPrecedence>
     <pathCost>2</pathCost>
 	<constructEffect>ConstructDirt</constructEffect>
+	<burnedDef>Soil</burnedDef>
     <statBases>
       <Beauty>0</Beauty>
       <Cleanliness>1</Cleanliness>
@@ -52,6 +53,7 @@
     <renderPrecedence>340</renderPrecedence>
     <pathCost>1</pathCost>
 	<constructEffect>ConstructDirt</constructEffect>
+	<burnedDef>Soil</burnedDef>
     <statBases>
       <Beauty>2</Beauty>
       <Cleanliness>-1</Cleanliness>
