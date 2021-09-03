@@ -36,6 +36,9 @@
         <cooldownTime>1.5</cooldownTime>
       </li>
     </tools>
+    <affordances>
+      <li>VFEArch_Soil</li>
+    </affordances>
     <tags>
       <li>Soil</li>
     </tags>
@@ -54,7 +57,7 @@
     <statBases>
       <Beauty>2</Beauty>
       <Cleanliness>-1</Cleanliness>
-	  <WorkToBuild>140</WorkToBuild>
+	  <WorkToBuild>600</WorkToBuild>
     </statBases>
     <scatterType>Rocky</scatterType>
     <affordances>
@@ -77,6 +80,9 @@
         <cooldownTime>1.5</cooldownTime>
       </li>
     </tools>
+    <affordances>
+      <li>VFEArch_Soil</li>
+    </affordances>
     <tags>
       <li>Soil</li>
     </tags>

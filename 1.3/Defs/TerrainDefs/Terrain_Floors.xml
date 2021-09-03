@@ -126,7 +126,7 @@
     <texturePath>Terrains/Cobblestone</texturePath>
     <resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
     <statBases>
-      <WorkToBuild>400</WorkToBuild>
+      <WorkToBuild>200</WorkToBuild>
       <Beauty>0</Beauty>
     </statBases>
     <designatorDropdown>VFEArch_CobblestoneFloor</designatorDropdown>
