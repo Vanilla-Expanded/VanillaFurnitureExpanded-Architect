@@ -2,7 +2,7 @@
 <Patch>
 
     <Operation Class="PatchOperationAdd">
-        <xpath>Defs/TerrainDef[defName="MossyTerrain" or defName="MarshyTerrain" or defName="SoftSand" or defName="Mud"]/affordances</xpath>
+        <xpath>Defs/TerrainDef[defName="MossyTerrain" or defName="MarshyTerrain" or defName="SoftSand" or defName="Mud" or defName="Soil" or defName="SoilRich" or defName="Gravel" or defName="Sand" or defName="Ice"]/affordances</xpath>
         <value>
             <li>VFEArch_Foundation</li>
 		</value>
