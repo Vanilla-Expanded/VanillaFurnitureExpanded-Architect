@@ -7,7 +7,13 @@
 		<li>1.3</li>
 	</supportedVersions>
 	<packageId>VanillaExpanded.VFEArchitect</packageId>
-	<description>Cool description!</description>
+	<description>Vanilla Furniture Expanded - Architect has been on my mind for a very long time. I always download every single mod adding new floors or fences, but I quickly become buried under all the new options, and eventually get pissed off because some of those options don't exactly fit Vanilla game in my eyes.
+	
+	I want new carpet colors, but I don't want all RGB hues - I want a small, tailored selection that fits the game. I want new tiles and floors, but I don't want 100 different patterns that have no distinction between them other than the looks. I want new fences, but I don't want more fence types than there are floor types. I want less, but I want more significant!
+	
+	Thus, Architect Expanded was born. Not only does it add new walls, fences, floors and carpets in various, vanilla-fitting colors, it also adds stone and metal bridges, as well as foundations that you can place on sand, so building in the desert will no longer be a problem! I seem to have forgotten to mention that wood now comes in 4 colors, all using just the base wood resource - so you can decide upon building what color your wooden objects will be!
+	
+	I really hope you will enjoy everything this mod has to offer, and it will allow you to make your colony at least twice as beautiful to look at.</description>
 	<loadAfter>
 		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
 	</loadAfter>
