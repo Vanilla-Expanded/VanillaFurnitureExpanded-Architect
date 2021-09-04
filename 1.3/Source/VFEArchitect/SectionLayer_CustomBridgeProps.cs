@@ -65,19 +65,22 @@ namespace VFEArchitect
         private bool ShouldDrawPropsBelow(IntVec3 c, TerrainGrid terrGrid)
         {
             var terrain = terrGrid.TerrainAt(c);
-            if (terrain == null || !terrain.bridge || !terrain.HasModExtension<TerrainExtension_CustomBridgeProps>()) return false;
+            if (terrain == null || !terrain.layerable || !terrain.HasModExtension<TerrainExtension_CustomBridgeProps>()) return false;
 
             var c2 = c;
             c2.z--;
             if (!c2.InBounds(Map)) return false;
 
             var below = terrGrid.TerrainAt(c2);
-            return !below.bridge && (below.passability == Traversability.Impassable || c2.SupportsStructureType(Map, terrain.terrainAffordanceNeeded));
+            if (terrain.GetModExtension<TerrainExtension_CustomBridgeProps>().alwaysShow && terrain != below) return true;
+            return (below.passability == Traversability.Impassable || c2.SupportsStructureType(Map, terrain.terrainAffordanceNeeded)) && !below.layerable &&
+                   !(below.HasModExtension<TerrainExtension_CustomBridgeProps>() || below.bridge);
         }
     }
 
     public class TerrainExtension_CustomBridgeProps : DefModExtension
     {
+        public bool alwaysShow;
         public Material loopMat;
         public string loopPath;
         public Material rightMat;

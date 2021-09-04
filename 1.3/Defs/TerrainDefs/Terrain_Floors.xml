@@ -246,7 +246,7 @@
     <texturePath>Terrains/StoneSlabs</texturePath>
     <statBases>
       <WorkToBuild>1100</WorkToBuild>
-      <Beauty>2</Beauty>
+      <Beauty>3</Beauty>
     </statBases>
     <designatorDropdown>VFEArch_StoneSlabs</designatorDropdown>
     <researchPrerequisites>
