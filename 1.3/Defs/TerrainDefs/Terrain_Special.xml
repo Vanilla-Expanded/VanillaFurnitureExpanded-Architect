@@ -27,6 +27,7 @@ Can be made out of any stone blocks.</description>
     <statBases>
       <WorkToBuild>2500</WorkToBuild>
       <Flammability>0</Flammability>
+      <Beauty>1</Beauty>
     </statBases>
     <tags>
       <li>Floor</li>
@@ -163,7 +164,7 @@ Can be made out of any stone blocks.</description>
       <Flammability>0</Flammability>
     </statBases>
     <costList>
-      <Steel>20</Steel>
+      <Steel>5</Steel>
     </costList>
     <tags>
       <li>Floor</li>
