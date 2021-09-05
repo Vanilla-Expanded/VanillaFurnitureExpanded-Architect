@@ -79,6 +79,7 @@
                      <statBases>
                         <WorkToBuild>5000</WorkToBuild>
                         <Beauty>3</Beauty>
+						<Flammability>0.22</Flammability>
                      </statBases>
                      <tags>
                         <li>FineFloor</li>
@@ -100,6 +101,7 @@
                      <statBases>
                         <WorkToBuild>5000</WorkToBuild>
                         <Beauty>3</Beauty>
+						<Flammability>0.22</Flammability>
                      </statBases>
                      <tags>
                         <li>FineFloor</li>
@@ -121,6 +123,7 @@
                      <statBases>
                         <WorkToBuild>5000</WorkToBuild>
                         <Beauty>3</Beauty>
+						<Flammability>0.22</Flammability>
                      </statBases>
                      <tags>
                         <li>FineFloor</li>
@@ -142,6 +145,7 @@
                      <statBases>
                         <WorkToBuild>5000</WorkToBuild>
                         <Beauty>3</Beauty>
+						<Flammability>0.22</Flammability>
                      </statBases>
                      <tags>
                         <li>FineFloor</li>
