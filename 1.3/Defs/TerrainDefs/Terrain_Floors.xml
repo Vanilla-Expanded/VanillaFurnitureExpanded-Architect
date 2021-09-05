@@ -31,6 +31,7 @@
       <statBases>
          <WorkToBuild>3000</WorkToBuild>
          <Beauty>2</Beauty>
+		 <Flammability>0.22</Flammability>
       </statBases>
       <constructEffect>ConstructWood</constructEffect>
 	  <designatorDropdown>VFEArch_WoodenParquet</designatorDropdown>
