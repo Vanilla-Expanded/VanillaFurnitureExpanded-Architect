@@ -185,7 +185,7 @@
     <description>Fancy, polished stone tiles for an elegant, mansion-like look. Don’t take nearly as long to lay down as the finer stone floors, but require a lot of resources. They are incredibly beautiful to look at.</description>
     <texturePath>Terrains/PolishedStoneFloor</texturePath>
     <statBases>
-      <WorkToBuild>3000</WorkToBuild>
+      <WorkToBuild>1500</WorkToBuild>
       <Beauty>2</Beauty>
     </statBases>
     <designatorDropdown>VFEArch_PolishedStoneFloor</designatorDropdown>
