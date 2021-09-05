@@ -36,21 +36,21 @@ namespace VFEArchitect
                     c.x++;
                     Material material;
                     var terrain = terrainGrid.TerrainAt(intVec);
-                    if (c.InBounds(map) && terrain == terrainGrid.TerrainAt(c))
+                    if (c.InBounds(map) && terrain == terrainGrid.TerrainAt(c) && ShouldDrawPropsBelow(c, terrainGrid))
                         material = terrain.GetModExtension<TerrainExtension_CustomBridgeProps>().loopMat;
                     else
                         material = terrain.GetModExtension<TerrainExtension_CustomBridgeProps>().rightMat;
 
                     var subMesh = GetSubMesh(material);
                     var count = subMesh.verts.Count;
-                    subMesh.verts.Add(new Vector3(intVec.x, y, intVec.z - 1));
+                    subMesh.verts.Add(new Vector3(intVec.x, y, intVec.z - 0.9f));
                     subMesh.verts.Add(new Vector3(intVec.x, y, intVec.z));
-                    subMesh.verts.Add(new Vector3(intVec.x + 1, y, intVec.z));
-                    subMesh.verts.Add(new Vector3(intVec.x + 1, y, intVec.z - 1));
-                    subMesh.uvs.Add(new Vector2(0f, 0f));
+                    subMesh.verts.Add(new Vector3(intVec.x + 1f, y, intVec.z));
+                    subMesh.verts.Add(new Vector3(intVec.x + 1f, y, intVec.z - 0.9f));
+                    subMesh.uvs.Add(new Vector2(0f, 0.1f));
                     subMesh.uvs.Add(new Vector2(0f, 1f));
                     subMesh.uvs.Add(new Vector2(1f, 1f));
-                    subMesh.uvs.Add(new Vector2(1f, 0f));
+                    subMesh.uvs.Add(new Vector2(1f, 0.1f));
                     subMesh.tris.Add(count);
                     subMesh.tris.Add(count + 1);
                     subMesh.tris.Add(count + 2);

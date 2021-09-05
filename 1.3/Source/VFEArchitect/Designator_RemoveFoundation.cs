@@ -10,7 +10,7 @@ namespace VFEArchitect
         {
             defaultLabel = "VFEArchitect.DesignatorRemoveFoundation".Translate();
             defaultDesc = "VFEArchitect.DesignatorRemoveFoundationDesc".Translate();
-            icon = ContentFinder<Texture2D>.Get("UI/Designators/RemoveBridge");
+            icon = ContentFinder<Texture2D>.Get("ConcreteFoundation/RemoveFoundation_MenuIcon");
             hotKey = KeyBindingDefOf.Misc5;
         }
 
