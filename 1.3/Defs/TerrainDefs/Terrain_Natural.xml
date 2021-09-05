@@ -52,7 +52,7 @@
     <texturePath>Terrains/Lawn</texturePath>
     <edgeType>FadeRough</edgeType>
     <renderPrecedence>340</renderPrecedence>
-    <pathCost>1</pathCost>
+    <pathCost>2</pathCost>
 	<constructEffect>ConstructDirt</constructEffect>
 	<burnedDef>Soil</burnedDef>
     <statBases>
