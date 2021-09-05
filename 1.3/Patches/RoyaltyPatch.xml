@@ -195,7 +195,7 @@
                      </uiIconPathsStuff>
                      <statBases>
                         <MaxHitPoints>300</MaxHitPoints>
-                        <WorkToBuild>135</WorkToBuild>
+                        <WorkToBuild>335</WorkToBuild>
                         <Flammability>1.0</Flammability>
                         <MeditationFocusStrength>0.22</MeditationFocusStrength>
                      </statBases>
