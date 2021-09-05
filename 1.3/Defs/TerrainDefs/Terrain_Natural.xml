@@ -13,7 +13,7 @@
 	<burnedDef>Soil</burnedDef>
     <statBases>
       <Beauty>0</Beauty>
-      <Cleanliness>1</Cleanliness>
+      <Cleanliness>-1</Cleanliness>
 	  <WorkToBuild>140</WorkToBuild>
 	  <Flammability>1</Flammability>
     </statBases>
