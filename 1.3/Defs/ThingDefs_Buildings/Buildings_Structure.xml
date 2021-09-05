@@ -404,6 +404,7 @@ Picket fences are considerably more beautiful than alternatives, and evoke a nic
       <isPlaceOverableWall>true</isPlaceOverableWall>
       <ai_chillDestination>false</ai_chillDestination>
       <ai_neverTrashThis>true</ai_neverTrashThis>
+	  <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
       <relatedBuildCommands>
         <li>PenMarker</li>
         <li>FenceGate</li>
