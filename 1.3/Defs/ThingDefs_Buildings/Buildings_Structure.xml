@@ -381,7 +381,7 @@ Picket fences are considerably more beautiful than alternatives, and evoke a nic
     <statBases>
       <MaxHitPoints>1</MaxHitPoints>
       <WorkToBuild>5</WorkToBuild>
-      <Flammability>1.0</Flammability>
+      <Flammability>0</Flammability>
     </statBases>
     <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
     <altitudeLayer>Building</altitudeLayer>
