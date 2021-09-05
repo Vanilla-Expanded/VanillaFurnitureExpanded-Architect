@@ -246,7 +246,7 @@
     <description>Large slabs of stone laid at random for that temple-like look. Beautiful to look at, they take a lot of work to place down and use up large amounts of resources.</description>
     <texturePath>Terrains/StoneSlabs</texturePath>
     <statBases>
-      <WorkToBuild>1100</WorkToBuild>
+      <WorkToBuild>5000</WorkToBuild>
       <Beauty>3</Beauty>
     </statBases>
     <designatorDropdown>VFEArch_StoneSlabs</designatorDropdown>
