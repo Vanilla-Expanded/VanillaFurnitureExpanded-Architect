@@ -27,6 +27,7 @@
         <value>
 			<designationCategory>Floors</designationCategory>
 			<description>Packed dirt, slightly enhancing movement speed, often forming paths around places of interest.</description>
+			<layerable>true</layerable>
 		</value>
     </Operation>
 	
