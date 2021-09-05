@@ -56,6 +56,7 @@
     <pathCost>2</pathCost>
 	<constructEffect>ConstructDirt</constructEffect>
 	<burnedDef>Soil</burnedDef>
+	<layerable>true</layerable>
     <statBases>
       <Beauty>2</Beauty>
       <Cleanliness>-1</Cleanliness>
