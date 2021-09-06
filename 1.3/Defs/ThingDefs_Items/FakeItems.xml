@@ -53,6 +53,14 @@
             <li Class="VFEArchitect.StuffExtension_Cost">
                 <thingDef>WoodLog</thingDef>
             </li>
+            <li Class="VFECore.StuffExtension">
+                <structureGenerationCommonalityOffset>0</structureGenerationCommonalityOffset>
+                <weaponGenerationCommonalityOffset>0</weaponGenerationCommonalityOffset>
+                <apparelGenerationCommonalityOffset>0</apparelGenerationCommonalityOffset>
+                <structureGenerationCommonalityFactor>0</structureGenerationCommonalityFactor>
+                <weaponGenerationCommonalityFactor>0</weaponGenerationCommonalityFactor>
+                <apparelGenerationCommonalityFactor>0</apparelGenerationCommonalityFactor>
+            </li>
         </modExtensions>
       </ThingDef>
 
