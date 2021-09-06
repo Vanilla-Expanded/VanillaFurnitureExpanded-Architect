@@ -14,6 +14,13 @@
 	Thus, Architect Expanded was born. Not only does it add new walls, fences, floors and carpets in various, vanilla-fitting colors, it also adds stone and metal bridges, as well as foundations that you can place on sand, so building in the desert will no longer be a problem! I seem to have forgotten to mention that wood now comes in 4 colors, all using just the base wood resource - so you can decide upon building what color your wooden objects will be!
 	
 	I really hope you will enjoy everything this mod has to offer, and it will allow you to make your colony at least twice as beautiful to look at.</description>
+    <modDependencies>
+        <li>
+            <packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
+            <displayName>Vanilla Expanded Framework</displayName>
+            <steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2023507013</steamWorkshopUrl>
+        </li>
+    </modDependencies>
 	<loadAfter>
 		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
 	</loadAfter>
