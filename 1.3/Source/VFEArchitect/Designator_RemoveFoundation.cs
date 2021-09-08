@@ -4,7 +4,7 @@ using Verse;
 
 namespace VFEArchitect
 {
-    public class Designator_RemoveFoundation : Designator_RemoveBridge
+    public class Designator_RemoveFoundation : Designator_RemoveFloor
     {
         public Designator_RemoveFoundation()
         {
@@ -14,12 +14,7 @@ namespace VFEArchitect
             hotKey = KeyBindingDefOf.Misc5;
         }
 
-        public override AcceptanceReport CanDesignateCell(IntVec3 c)
-        {
-            if (c.InBounds(Map) && !c.GetTerrain(Map).HasModExtension<TerrainExtension_Foundation>()) return false;
-
-            return base.CanDesignateCell(c);
-        }
+        public override AcceptanceReport CanDesignateCell(IntVec3 c) => base.CanDesignateCell(c) && c.GetTerrain(Map).HasModExtension<TerrainExtension_Foundation>();
     }
 
     public class TerrainExtension_Foundation : DefModExtension
