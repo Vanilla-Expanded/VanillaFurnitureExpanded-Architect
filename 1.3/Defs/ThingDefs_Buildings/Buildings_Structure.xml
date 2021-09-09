@@ -583,5 +583,87 @@ Picket fences are considerably more beautiful than alternatives, and evoke a nic
       </li>
     </damageMultipliers>
   </ThingDef>
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>VFEArch_CellWall</defName>
+    <label>cell wall</label>
+    <description>An impassable wall consisting of prison bars. Cannot be attacked by prisoners.</description>
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+    <graphicData>
+      <texPath>CellWall/CellWall_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <linkType>CornerFiller</linkType>
+      <linkFlags>
+        <li>Wall</li>
+        <li>Rock</li>
+      </linkFlags>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+        <edgeTop>Damage/Edge</edgeTop>
+        <edgeBot>Damage/Edge</edgeBot>
+        <edgeLeft>Damage/Edge</edgeLeft>
+        <edgeRight>Damage/Edge</edgeRight>
+      </damageData>
+    </graphicData>
+    <uiIconPath>CellWall/CellWall_MenuIcon</uiIconPath>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <WorkToBuild>135</WorkToBuild>
+      <MeditationFocusStrength>0.22</MeditationFocusStrength>
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+	<costStuffCount>5</costStuffCount>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <blockWind>true</blockWind>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>0.8</fillPercent>
+    <coversFloor>true</coversFloor>
+    <placingDraggableDimensions>1</placingDraggableDimensions>
+    <tickerType>Never</tickerType>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <holdsRoof>true</holdsRoof>
+    <designationCategory>Structure</designationCategory>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+    <blockLight>false</blockLight>
+    <canOverlapZones>false</canOverlapZones>
+    <fertility>0</fertility>
+    <building>
+      <isInert>true</isInert>
+      <isPlaceOverableWall>true</isPlaceOverableWall>
+      <ai_chillDestination>false</ai_chillDestination>
+      <blueprintGraphicData>
+        <texPath>CellWall/CellWall_Blueprint_Atlas</texPath>
+      </blueprintGraphicData>
+    </building>
+    <comps>
+      <li Class="CompProperties_MeditationFocus">
+        <statDef>MeditationFocusStrength</statDef>
+        <focusTypes>
+          <li>Minimal</li>
+        </focusTypes>
+      </li>
+    </comps>
+    <damageMultipliers>
+      <li>
+        <damageDef>Bomb</damageDef>
+        <multiplier>2</multiplier>
+      </li>
+      <li>
+        <damageDef>Thump</damageDef>
+        <multiplier>4</multiplier>
+      </li>
+    </damageMultipliers>
+  </ThingDef>
 
 </Defs>
