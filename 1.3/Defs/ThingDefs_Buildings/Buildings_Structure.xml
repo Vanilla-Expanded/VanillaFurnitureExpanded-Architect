@@ -664,6 +664,9 @@ Picket fences are considerably more beautiful than alternatives, and evoke a nic
         <multiplier>4</multiplier>
       </li>
     </damageMultipliers>
+    <researchPrerequisites>
+      <li>Smithing</li>
+    </researchPrerequisites>
   </ThingDef>
 
 </Defs>
