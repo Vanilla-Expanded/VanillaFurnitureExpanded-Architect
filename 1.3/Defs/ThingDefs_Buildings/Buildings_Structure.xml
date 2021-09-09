@@ -668,5 +668,119 @@ Picket fences are considerably more beautiful than alternatives, and evoke a nic
       <li>Smithing</li>
     </researchPrerequisites>
   </ThingDef>
+  
+  <ThingDef ParentName="DoorBase">
+    <defName>VFEArch_CellDoor</defName>
+    <label>cell door</label>
+    <description>A slow moving door that separates two rooms. Cell doors cannot be attacked by prisoners.</description>
+    <statBases>
+      <WorkToBuild>850</WorkToBuild>
+    </statBases>
+    <graphicData>
+      <texPath>DoorCell/DoorCell_Mover</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <enabled>false</enabled>
+      </damageData>
+    </graphicData>
+    <uiIconPath>DoorCell/DoorCell_MenuIcon</uiIconPath>
+    <building>
+      <blueprintGraphicData>
+        <texPath>DoorCell/DoorCell_Blueprint</texPath>
+      </blueprintGraphicData>
+    </building>
+    <stuffCategories Inherit="False">
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>25</costStuffCount>
+    <researchPrerequisites>
+      <li>Smithing</li>
+    </researchPrerequisites>
+  </ThingDef>
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>VFEArch_ArmoredWall</defName>
+    <label>armored wall</label>
+    <description>An impassable, heavy wall with multiple layers of armor. Completely resistant to explosives and any breaching tools.</description>
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+    <graphicData>
+      <texPath>ArmoredWall/ArmoredWall_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <linkType>CornerFiller</linkType>
+      <linkFlags>
+        <li>Wall</li>
+        <li>Rock</li>
+      </linkFlags>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+        <edgeTop>Damage/Edge</edgeTop>
+        <edgeBot>Damage/Edge</edgeBot>
+        <edgeLeft>Damage/Edge</edgeLeft>
+        <edgeRight>Damage/Edge</edgeRight>
+      </damageData>
+    </graphicData>
+    <uiIconPath>ArmoredWall/ArmoredWall_MenuIcon</uiIconPath>
+    <statBases>
+      <MaxHitPoints>800</MaxHitPoints>
+      <WorkToBuild>335</WorkToBuild>
+      <MeditationFocusStrength>0.22</MeditationFocusStrength>
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+	<costStuffCount>10</costStuffCount>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <blockWind>true</blockWind>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>1.0</fillPercent>
+    <coversFloor>true</coversFloor>
+    <placingDraggableDimensions>1</placingDraggableDimensions>
+    <tickerType>Never</tickerType>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <holdsRoof>true</holdsRoof>
+    <designationCategory>Structure</designationCategory>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+    <blockLight>false</blockLight>
+    <canOverlapZones>false</canOverlapZones>
+    <fertility>0</fertility>
+    <building>
+      <isInert>true</isInert>
+      <isPlaceOverableWall>true</isPlaceOverableWall>
+      <ai_chillDestination>false</ai_chillDestination>
+      <blueprintGraphicData>
+        <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+      </blueprintGraphicData>
+    </building>
+    <comps>
+      <li Class="CompProperties_MeditationFocus">
+        <statDef>MeditationFocusStrength</statDef>
+        <focusTypes>
+          <li>Minimal</li>
+        </focusTypes>
+      </li>
+    </comps>
+    <damageMultipliers>
+      <li>
+        <damageDef>Bomb</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>Thump</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+    </damageMultipliers>
+    <researchPrerequisites>
+      <li>Fabrication</li>
+    </researchPrerequisites>
+  </ThingDef>
 
 </Defs>
