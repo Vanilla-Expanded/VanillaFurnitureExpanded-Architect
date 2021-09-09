@@ -675,6 +675,7 @@ Picket fences are considerably more beautiful than alternatives, and evoke a nic
     <description>A slow moving door that separates two rooms. Cell doors cannot be attacked by prisoners.</description>
     <statBases>
       <WorkToBuild>850</WorkToBuild>
+	  <MaxHitPoints>80</MaxHitPoints>
     </statBases>
     <graphicData>
       <texPath>DoorCell/DoorCell_Mover</texPath>
@@ -693,6 +694,12 @@ Picket fences are considerably more beautiful than alternatives, and evoke a nic
       <li>Metallic</li>
     </stuffCategories>
     <costStuffCount>25</costStuffCount>
+    <damageMultipliers>
+      <li>
+        <damageDef>Bomb</damageDef>
+        <multiplier>2</multiplier>
+      </li>
+    </damageMultipliers>
     <researchPrerequisites>
       <li>Smithing</li>
     </researchPrerequisites>
