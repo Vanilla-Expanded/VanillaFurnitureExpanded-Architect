@@ -829,5 +829,29 @@ Picket fences are considerably more beautiful than alternatives, and evoke a nic
       <li>Fabrication</li>
     </researchPrerequisites>
   </ThingDef>
+  
+  <ThingDef ParentName="DoorBase">
+    <defName>VFEArch_SingleDoor</defName>
+    <label>single door</label>
+    <description>Divides rooms. Simple doors must be manually opened, which slows people down. The amount of slowdown does not depend on what the door is made of.</description>
+    <statBases>
+      <WorkToBuild>650</WorkToBuild>
+	  <MaxHitPoints>120</MaxHitPoints>
+    </statBases>
+    <graphicData>
+      <texPath>DoorSingle/DoorSingle_Mover</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <enabled>false</enabled>
+      </damageData>
+    </graphicData>
+    <uiIconPath>DoorSingle/DoorSingle_MenuIcon</uiIconPath>
+    <building>
+      <blueprintGraphicData>
+        <texPath>DoorSingle/DoorSingle_Blueprint</texPath>
+      </blueprintGraphicData>
+    </building>
+    <costStuffCount>15</costStuffCount>
+  </ThingDef>
 
 </Defs>
