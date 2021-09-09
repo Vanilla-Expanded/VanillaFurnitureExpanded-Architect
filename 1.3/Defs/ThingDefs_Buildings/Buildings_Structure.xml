@@ -542,7 +542,7 @@ Picket fences are considerably more beautiful than alternatives, and evoke a nic
     <passability>Impassable</passability>
     <blockWind>true</blockWind>
     <castEdgeShadows>true</castEdgeShadows>
-    <fillPercent>0.8</fillPercent>
+    <fillPercent>1.0</fillPercent>
     <coversFloor>true</coversFloor>
     <placingDraggableDimensions>1</placingDraggableDimensions>
     <tickerType>Never</tickerType>
@@ -624,7 +624,7 @@ Picket fences are considerably more beautiful than alternatives, and evoke a nic
     <passability>Impassable</passability>
     <blockWind>true</blockWind>
     <castEdgeShadows>true</castEdgeShadows>
-    <fillPercent>0.8</fillPercent>
+    <fillPercent>1.0</fillPercent>
     <coversFloor>true</coversFloor>
     <placingDraggableDimensions>1</placingDraggableDimensions>
     <tickerType>Never</tickerType>
