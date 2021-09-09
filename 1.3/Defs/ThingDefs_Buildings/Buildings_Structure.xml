@@ -789,5 +789,45 @@ Picket fences are considerably more beautiful than alternatives, and evoke a nic
       <li>Fabrication</li>
     </researchPrerequisites>
   </ThingDef>
+  
+  <ThingDef ParentName="DoorBase">
+    <defName>VFEArch_ArmoredDoor</defName>
+    <label>armored door</label>
+    <description>Divides rooms. Armored doors must be manually opened, which slows people down. Armored doors are entirely blast resistant and do not take damage from breaching methods.</description>
+    <statBases>
+      <WorkToBuild>1685</WorkToBuild>
+	  <MaxHitPoints>450</MaxHitPoints>
+    </statBases>
+    <graphicData>
+      <texPath>ArmoredDoor/ArmoredDoor_Mover</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <enabled>false</enabled>
+      </damageData>
+    </graphicData>
+    <uiIconPath>ArmoredDoor/ArmoredDoor_MenuIcon</uiIconPath>
+    <building>
+      <blueprintGraphicData>
+        <texPath>ArmoredDoor/ArmoredDoor_Blueprint</texPath>
+      </blueprintGraphicData>
+    </building>
+    <stuffCategories Inherit="False">
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>50</costStuffCount>
+    <damageMultipliers>
+      <li>
+        <damageDef>Bomb</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+      <li>
+        <damageDef>Thump</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+    </damageMultipliers>
+    <researchPrerequisites>
+      <li>Fabrication</li>
+    </researchPrerequisites>
+  </ThingDef>
 
 </Defs>
