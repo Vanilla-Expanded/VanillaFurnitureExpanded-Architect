@@ -1,4 +1,5 @@
-﻿using HarmonyLib;
+﻿using System.Collections.Generic;
+using HarmonyLib;
 using RimWorld;
 using Verse;
 
@@ -6,7 +7,8 @@ namespace VFEArchitect
 {
     public class ArchitectMod : Mod
     {
-        public static AccessTools.FieldRef<Designator_Build, BuildableDef> GetEntDef = AccessTools.FieldRefAccess<Designator_Build, BuildableDef>("entDef");
+        private static readonly AccessTools.FieldRef<Designator_Build, BuildableDef> desEntDef = AccessTools.FieldRefAccess<Designator_Build, BuildableDef>("entDef");
+        private static AccessTools.StructFieldRef<StatRequest, ThingDef> statReqStuff;
 
         public ArchitectMod(ModContentPack content) : base(content)
         {
@@ -19,6 +21,12 @@ namespace VFEArchitect
             harm.Patch(AccessTools.Method(typeof(ListerThings), nameof(ListerThings.ThingsOfDef)), new HarmonyMethod(typeof(ArchitectMod), nameof(AdjustCount)));
             harm.Patch(AccessTools.Method(typeof(ResourceCounter), nameof(ResourceCounter.GetCount), new[] {typeof(ThingDef)}),
                 new HarmonyMethod(typeof(ArchitectMod), nameof(AdjustCount)));
+            harm.Patch(AccessTools.Method(typeof(Region), nameof(Region.Allows)), new HarmonyMethod(typeof(ArchitectMod), nameof(PrisonerProof)));
+            statReqStuff = AccessTools.StructFieldRefAccess<StatRequest, ThingDef>("stuffDefInt");
+            harm.Patch(AccessTools.Method(typeof(StatWorker), nameof(StatWorker.GetValueUnfinalized)),
+                new HarmonyMethod(typeof(ArchitectMod), nameof(StatIgnoreStuff)));
+            harm.Patch(AccessTools.Method(typeof(StatWorker), nameof(StatWorker.GetExplanationFull)),
+                new HarmonyMethod(typeof(ArchitectMod), nameof(StatIgnoreStuff)));
         }
 
         public static void AdjustCount(ref ThingDef __0)
@@ -28,7 +36,7 @@ namespace VFEArchitect
 
         public static void RequireGodMode(ref bool __result, Designator_Build __instance)
         {
-            if (__result && GetEntDef.Invoke(__instance).HasModExtension<BuildExtension_RequireGodMode>() && !DebugSettings.godMode) __result = false;
+            if (__result && desEntDef.Invoke(__instance).HasModExtension<BuildExtension_RequireGodMode>() && !DebugSettings.godMode) __result = false;
         }
 
         public static void AdjustStuff(ref ThingDef stuff)
@@ -40,6 +48,21 @@ namespace VFEArchitect
         {
             if (__result && terrGrid.TerrainAt(c).HasModExtension<TerrainExtension_CustomBridgeProps>()) __result = false;
         }
+
+        public static bool PrisonerProof(TraverseParms tp, Region __instance, ref bool __result)
+        {
+            if (tp.mode == TraverseMode.ByPawn && tp.pawn != null && __instance.door != null && tp.pawn.IsPrisoner && tp.pawn.InMentalState && tp.canBashDoors &&
+                !__instance.door.CanPhysicallyPass(tp.pawn) && __instance.door.def.HasModExtension<BuildingExtension_PrisonerProof>()) return __result = false;
+
+            return true;
+        }
+
+        public static void StatIgnoreStuff(ref StatRequest req, StatDef ___stat)
+        {
+            if (req.HasThing && req.StuffDef != null && req.Def.HasModExtension<ThingExtension_IgnoreStuffFor>() &&
+                req.Def.GetModExtension<ThingExtension_IgnoreStuffFor>().stats.Contains(___stat))
+                statReqStuff.Invoke(ref req) = null;
+        }
     }
 
     public class StuffExtension_Cost : DefModExtension
@@ -49,5 +72,14 @@ namespace VFEArchitect
 
     public class BuildExtension_RequireGodMode : DefModExtension
     {
+    }
+
+    public class BuildingExtension_PrisonerProof : DefModExtension
+    {
+    }
+
+    public class ThingExtension_IgnoreStuffFor : DefModExtension
+    {
+        public List<StatDef> stats;
     }
 }

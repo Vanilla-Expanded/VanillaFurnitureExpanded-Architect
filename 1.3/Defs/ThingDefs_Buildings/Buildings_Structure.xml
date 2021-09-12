@@ -667,6 +667,9 @@ Picket fences are considerably more beautiful than alternatives, and evoke a nic
     <researchPrerequisites>
       <li>Smithing</li>
     </researchPrerequisites>
+    <modExtensions>
+      <li Class="VFEArchitect.BuildingExtension_PrisonerProof" />
+    </modExtensions>
   </ThingDef>
   
   <ThingDef ParentName="DoorBase">
@@ -676,6 +679,7 @@ Picket fences are considerably more beautiful than alternatives, and evoke a nic
     <statBases>
       <WorkToBuild>850</WorkToBuild>
 	  <MaxHitPoints>80</MaxHitPoints>
+    <DoorOpenSpeed>0.8</DoorOpenSpeed>
     </statBases>
     <graphicData>
       <texPath>DoorCell/DoorCell_Mover</texPath>
@@ -703,6 +707,9 @@ Picket fences are considerably more beautiful than alternatives, and evoke a nic
     <researchPrerequisites>
       <li>Smithing</li>
     </researchPrerequisites>
+    <modExtensions>
+      <li Class="VFEArchitect.BuildingExtension_PrisonerProof" />
+    </modExtensions>
   </ThingDef>
   
   <ThingDef ParentName="BuildingBase">
@@ -797,6 +804,7 @@ Picket fences are considerably more beautiful than alternatives, and evoke a nic
     <statBases>
       <WorkToBuild>1685</WorkToBuild>
 	  <MaxHitPoints>450</MaxHitPoints>
+    <DoorOpenSpeed>0.75</DoorOpenSpeed>
     </statBases>
     <graphicData>
       <texPath>ArmoredDoor/ArmoredDoor_Mover</texPath>
@@ -834,9 +842,11 @@ Picket fences are considerably more beautiful than alternatives, and evoke a nic
     <defName>VFEArch_SingleDoor</defName>
     <label>single door</label>
     <description>Divides rooms. Simple doors must be manually opened, which slows people down. The amount of slowdown does not depend on what the door is made of.</description>
+    <thingClass>VFEArchitect.Building_DoorSingle</thingClass>
     <statBases>
       <WorkToBuild>650</WorkToBuild>
 	  <MaxHitPoints>120</MaxHitPoints>
+    <DoorOpenSpeed>2.5</DoorOpenSpeed>
     </statBases>
     <graphicData>
       <texPath>DoorSingle/DoorSingle_Mover</texPath>
@@ -852,6 +862,11 @@ Picket fences are considerably more beautiful than alternatives, and evoke a nic
       </blueprintGraphicData>
     </building>
     <costStuffCount>15</costStuffCount>
+    <modExtensions>
+      <li Class="VFEArchitect.ThingExtension_IgnoreStuffFor">
+<stats><li>DoorOpenSpeed</li></stats>
+        </li>
+    </modExtensions>
   </ThingDef>
 
 </Defs>
