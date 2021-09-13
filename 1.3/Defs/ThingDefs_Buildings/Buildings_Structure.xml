@@ -533,6 +533,7 @@ Picket fences are considerably more beautiful than alternatives, and evoke a nic
       <WorkToBuild>100</WorkToBuild>
       <Flammability>1.0</Flammability>
       <MeditationFocusStrength>0.22</MeditationFocusStrength>
+	  <Beauty>1</Beauty>
     </statBases>
     <costList>
       <WoodLog>3</WoodLog>
@@ -715,7 +716,7 @@ Picket fences are considerably more beautiful than alternatives, and evoke a nic
   <ThingDef ParentName="BuildingBase">
     <defName>VFEArch_ArmoredWall</defName>
     <label>armored wall</label>
-    <description>An impassable, heavy wall with multiple layers of armor. Completely resistant to explosives and any breaching tools.</description>
+    <description>An impassable, heavy wall with multiple layers of armor. Nearly completely resistant to explosives and any breaching tools.</description>
     <thingClass>Building</thingClass>
     <category>Building</category>
     <graphicData>
@@ -740,7 +741,7 @@ Picket fences are considerably more beautiful than alternatives, and evoke a nic
     <uiIconPath>ArmoredWall/ArmoredWall_MenuIcon</uiIconPath>
     <statBases>
       <MaxHitPoints>800</MaxHitPoints>
-      <WorkToBuild>335</WorkToBuild>
+      <WorkToBuild>505</WorkToBuild>
       <MeditationFocusStrength>0.22</MeditationFocusStrength>
     </statBases>
     <stuffCategories>
@@ -785,11 +786,11 @@ Picket fences are considerably more beautiful than alternatives, and evoke a nic
     <damageMultipliers>
       <li>
         <damageDef>Bomb</damageDef>
-        <multiplier>0</multiplier>
+        <multiplier>0.05</multiplier>
       </li>
       <li>
         <damageDef>Thump</damageDef>
-        <multiplier>0</multiplier>
+        <multiplier>0.05</multiplier>
       </li>
     </damageMultipliers>
     <researchPrerequisites>
@@ -800,7 +801,7 @@ Picket fences are considerably more beautiful than alternatives, and evoke a nic
   <ThingDef ParentName="DoorBase">
     <defName>VFEArch_ArmoredDoor</defName>
     <label>armored door</label>
-    <description>Divides rooms. Armored doors must be manually opened, which slows people down. Armored doors are entirely blast resistant and do not take damage from breaching methods.</description>
+    <description>Divides rooms. Armored doors must be manually opened, which slows people down. Armored doors are nearly entirely blast resistant and barely take damage from breaching methods.</description>
     <statBases>
       <WorkToBuild>1685</WorkToBuild>
 	  <MaxHitPoints>450</MaxHitPoints>
@@ -826,11 +827,11 @@ Picket fences are considerably more beautiful than alternatives, and evoke a nic
     <damageMultipliers>
       <li>
         <damageDef>Bomb</damageDef>
-        <multiplier>0</multiplier>
+        <multiplier>0.05</multiplier>
       </li>
       <li>
         <damageDef>Thump</damageDef>
-        <multiplier>0</multiplier>
+        <multiplier>0.05</multiplier>
       </li>
     </damageMultipliers>
     <researchPrerequisites>
