@@ -868,5 +868,37 @@ Picket fences are considerably more beautiful than alternatives, and evoke a nic
         </li>
     </modExtensions>
   </ThingDef>
+  
+  <ThingDef ParentName="DoorBase">
+    <defName>VFEArch_AnimalGate</defName>
+    <label>animal gate</label>
+    <description>A doorway with a gate easy enough to open so that it can be pushed open by animals. It allows animals to pass, but doesn’t insulate the room. Animal gates are often used as barn entrances in warmer climates.</description>
+    <statBases>
+      <WorkToBuild>850</WorkToBuild>
+      <MaxHitPoints>40</MaxHitPoints>
+    </statBases>
+    <graphicData>
+      <texPath>AnimalGate/AnimalGate_Mover</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <damageData>
+        <enabled>false</enabled>
+      </damageData>
+    </graphicData>
+    <uiIconPath>AnimalGate/AnimalGate_MenuIcon</uiIconPath>
+    <costStuffCount>25</costStuffCount>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <building>
+      <roamerCanOpen>true</roamerCanOpen>
+      <ai_chillDestination>false</ai_chillDestination>
+      <blueprintGraphicData>
+        <texPath>AnimalGate/AnimalGate_Blueprint</texPath>
+        <graphicClass>Graphic_Multi</graphicClass>
+      </blueprintGraphicData>
+    </building>
+  </ThingDef>
 
 </Defs>
