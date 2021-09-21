@@ -10,7 +10,7 @@
       <renderPrecedence>70</renderPrecedence>
       <statBases>
          <Beauty>0</Beauty>
-         <WorkToBuild>100</WorkToBuild>
+         <WorkToBuild>250</WorkToBuild>
       </statBases>
       <costList>
          <Steel>2</Steel>
