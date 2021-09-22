@@ -189,6 +189,7 @@
       <Beauty>2</Beauty>
     </statBases>
     <designatorDropdown>VFEArch_PolishedStoneFloor</designatorDropdown>
+	<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
 	<researchPrerequisites>
         <li>Stonecutting</li>
     </researchPrerequisites>

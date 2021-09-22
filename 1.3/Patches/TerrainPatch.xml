@@ -12,6 +12,11 @@
 			<researchPrerequisites>
                 <li>Stonecutting</li>
             </researchPrerequisites>
+            <affordances>
+              <li>Light</li>
+              <li>Medium</li>
+              <li>Heavy</li>
+             </affordances>
 		</value>
     </Operation>
 	
@@ -29,6 +34,11 @@
 			<description>Packed dirt, slightly enhancing movement speed, often forming paths around places of interest.</description>
 			<layerable>true</layerable>
 			<constructEffect>ConstructDirt</constructEffect>
+            <affordances>
+              <li>Light</li>
+              <li>Medium</li>
+              <li>Heavy</li>
+             </affordances>
 		</value>
     </Operation>
 	
