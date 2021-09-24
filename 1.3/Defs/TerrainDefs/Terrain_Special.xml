@@ -2,7 +2,7 @@
 <Defs>
 
   <TerrainDef Abstract="True" Name="StoneBridgeBase">
-    <description>Stone Bridges are structures that can be built on water. Bridges allow more rapid movement across water. Once built, they can support many structures, including heavy structures and any type of wall. Bridges allow for easier building in swampy biomes. Floors may not be built atop bridges.
+    <description>Stone Bridges are structures that can be built on water. Bridges allow more rapid movement across water. Once built, they can support many structures, including heavy structures and any type of wall. Bridges allow for easier building in swampy biomes.
 	
 Can be made out of any stone blocks.</description>
     <texturePath>StoneBridge/StoneBridge</texturePath>
@@ -96,7 +96,7 @@ Can be made out of any stone blocks.</description>
   </TerrainDef>
   
   <TerrainDef Abstract="True" Name="SteelBridgeBase">
-    <description>Steel Bridges are structures that can be built on water. Bridges allow more rapid movement across water. Once built, they can support many structures, including heavy structures and any other type of wall. Steel bridges are extremely durable. Bridges allow for easier building in swampy biomes. Floors may not be built atop bridges.</description>
+    <description>Steel Bridges are structures that can be built on water. Bridges allow more rapid movement across water. Once built, they can support many structures, including heavy structures and any other type of wall. Steel bridges are extremely durable. Bridges allow for easier building in swampy biomes.</description>
     <texturePath>SteelBridge/SteelBridge</texturePath>
     <uiIconPath>SteelBridge/SteelBridge_MenuIcon</uiIconPath>
     <layerable>true</layerable>

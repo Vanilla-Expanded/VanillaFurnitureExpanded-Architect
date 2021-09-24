@@ -1,43 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/TerrainDef[defName="BrokenAsphalt"]</xpath>
-        <value>
-		    <description>Old, broken apart asphalt, often found in the form of ancient highways around abandoned locations. Very easy to traverse for people and vehicles alike.</description>
-            <costList>
-              <Steel>1</Steel>
-            </costList>
-			<designationCategory>Floors</designationCategory>
-			<researchPrerequisites>
-                <li>Stonecutting</li>
-            </researchPrerequisites>
-		</value>
-    </Operation>
-	
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/TerrainDef[defName="BrokenAsphalt"]/statBases</xpath>
-        <value>
-            <WorkToBuild>70</WorkToBuild>
-		</value>
-    </Operation>
-	
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/TerrainDef[defName="PackedDirt"]</xpath>
-        <value>
-			<designationCategory>Floors</designationCategory>
-			<description>Packed dirt, slightly enhancing movement speed, often forming paths around places of interest.</description>
-			<layerable>true</layerable>
-			<constructEffect>ConstructDirt</constructEffect>
-		</value>
-    </Operation>
-	
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/TerrainDef[defName="PackedDirt"]/statBases</xpath>
-        <value>
-            <WorkToBuild>50</WorkToBuild>
-		</value>
-    </Operation>
 	
     <Operation Class="PatchOperationAdd">
         <xpath>Defs/TerrainDef[defName="WoodPlankFloor"]</xpath>

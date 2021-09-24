@@ -10,7 +10,7 @@
       <renderPrecedence>70</renderPrecedence>
       <statBases>
          <Beauty>0</Beauty>
-         <WorkToBuild>100</WorkToBuild>
+         <WorkToBuild>250</WorkToBuild>
       </statBases>
       <costList>
          <Steel>2</Steel>
@@ -189,6 +189,7 @@
       <Beauty>2</Beauty>
     </statBases>
     <designatorDropdown>VFEArch_PolishedStoneFloor</designatorDropdown>
+	<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
 	<researchPrerequisites>
         <li>Stonecutting</li>
     </researchPrerequisites>

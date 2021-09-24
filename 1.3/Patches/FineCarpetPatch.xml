@@ -13,63 +13,63 @@
                      <defName>VFEArch_CarpetFineAzure</defName>
                      <label>fine azure carpet</label>
                      <renderPrecedence>200</renderPrecedence>
-                     <description>todo.</description>
+                     <description>Exquisite, sea-colored carpet for the high-tier professional environment.</description>
                      <color>(24,65,121)</color>
                   </TerrainDef>
                   <TerrainDef ParentName="CarpetFineBase">
                      <defName>VFEArch_CarpetFineViridescent</defName>
                      <label>fine viridescent carpet</label>
                      <renderPrecedence>199</renderPrecedence>
-                     <description>todo.</description>
+                     <description>Natural and posh green carpet with beautiful patterns.</description>
                      <color>(89,105,62)</color>
                   </TerrainDef>
                   <TerrainDef ParentName="CarpetFineBase">
                      <defName>VFEArch_CarpetFineCrimson</defName>
                      <label>fine crimson carpet</label>
                      <renderPrecedence>198</renderPrecedence>
-                     <description>todo.</description>
+                     <description>Rich red carpet with deep crimson hue.</description>
                      <color>(118,49,57)</color>
                   </TerrainDef>
                   <TerrainDef ParentName="CarpetFineBase">
                      <defName>VFEArch_CarpetFineMilky</defName>
                      <label>fine milky carpet</label>
                      <renderPrecedence>200</renderPrecedence>
-                     <description>A tender, soft fine carpet in a milky tone.</description>
+                     <description>Subtle creamy carpet for the neutral yet posh rooms.</description>
                      <color>(195,192,176)</color>
                   </TerrainDef>
                   <TerrainDef ParentName="CarpetFineBase">
                      <defName>VFEArch_CarpetFineAshen</defName>
                      <label>fine ashen carpet</label>
                      <renderPrecedence>199</renderPrecedence>
-                     <description>todo.</description>
+                     <description>Fancy dark shade of carpet for the secret evil lair.</description>
                      <color>(81,81,81)</color>
                   </TerrainDef>
                   <TerrainDef ParentName="CarpetFineBase">
                      <defName>VFEArch_CarpetFineBlonde</defName>
                      <label>fine blonde carpet</label>
                      <renderPrecedence>198</renderPrecedence>
-                     <description>todo.</description>
+                     <description>Eccentric, glowing yellow carpet, shining bright in daylight.</description>
                      <color>(150,146,8)</color>
                   </TerrainDef>
                   <TerrainDef ParentName="CarpetFineBase">
                      <defName>VFEArch_CarpetFineAmber</defName>
                      <label>fine amber carpet</label>
                      <renderPrecedence>200</renderPrecedence>
-                     <description>todo.</description>
+                     <description>Rich orange carpet symbolising wealth and prosperity.</description>
                      <color>(155,103,0)</color>
                   </TerrainDef>
                   <TerrainDef ParentName="CarpetFineBase">
                      <defName>VFEArch_CarpetFineFeldgrau</defName>
                      <label>fine feldgrau carpet</label>
                      <renderPrecedence>199</renderPrecedence>
-                     <description>todo.</description>
+                     <description>Deep green carpet with blue hues, for the natural yet exquisite look.</description>
                      <color>(71,106,82)</color>
                   </TerrainDef>
                   <TerrainDef ParentName="CarpetFineBase">
                      <defName>VFEArch_CarpetFineHazel</defName>
                      <label>fine hazel carpet</label>
                      <renderPrecedence>198</renderPrecedence>
-                     <description>todo.</description>
+                     <description>Nutty, dark carpet that brings detailed memories of home.</description>
                      <color>(100,81,67)</color>
                   </TerrainDef>
                </value>
