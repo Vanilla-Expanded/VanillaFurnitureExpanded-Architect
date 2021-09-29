@@ -18,6 +18,9 @@
                         <li>FineFloor</li>
                      </tags>
 					 <designatorDropdown>VFEArch_FineMetalFloor</designatorDropdown>
+                     <researchPrerequisites>
+                        <li>Smithing</li>
+                     </researchPrerequisites>
                   </TerrainDef>
                   <TerrainDef ParentName="FineMetalTileBase">
                      <defName>VFEArch_FineSteelTile</defName>
