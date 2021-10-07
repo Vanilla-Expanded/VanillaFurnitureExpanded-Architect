@@ -764,7 +764,7 @@ Picket fences are considerably more beautiful than alternatives, and evoke a nic
     <holdsRoof>true</holdsRoof>
     <designationCategory>Structure</designationCategory>
     <staticSunShadowHeight>1.0</staticSunShadowHeight>
-    <blockLight>false</blockLight>
+    <blockLight>true</blockLight>
     <canOverlapZones>false</canOverlapZones>
     <fertility>0</fertility>
     <building>
