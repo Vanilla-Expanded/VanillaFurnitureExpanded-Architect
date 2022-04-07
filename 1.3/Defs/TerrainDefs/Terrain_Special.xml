@@ -143,7 +143,7 @@ Can be made out of any stone blocks.</description>
   <TerrainDef>
     <defName>VFEArch_ConcreteFoundation</defName>
     <label>concrete foundation</label>
-    <description>Foundations are structures that can be built on mud, quicksand etc. Foundation allows more rapid movement across these normally slowing ground types. Once built, they can support many structures, including heavy structures and any other type of wall. Foundations allow for easier building in desert and swampy biomes. Floors may be built atop foundations.</description>
+    <description>Foundations are structures that can be built on mud, quicksand etc. Foundation allows more rapid movement across these normally slowing ground types. Once built, they can support many structures, including heavy structures and any other type of wall. Foundations allow for easier building in desert and swampy biomes. Floors cannot be built atop foundations.</description>
     <texturePath>Terrain/Surfaces/Concrete</texturePath>
     <uiIconPath>ConcreteFoundation/Foundation_MenuIcon</uiIconPath>
     <layerable>true</layerable>
