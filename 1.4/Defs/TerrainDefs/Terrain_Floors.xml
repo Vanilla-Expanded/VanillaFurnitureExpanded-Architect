@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+   <TerrainDef ParentName="FloorBase">
+      <defName>VFEArch_Asphalt</defName>
+      <label>asphalt</label>
+      <description>Industrial-style asphalt used to create roads and streets. Very easy to traverse for people and vehicles alike.</description>
+      <texturePath>Terrains/Asphalt</texturePath>
+      <edgeType>Hard</edgeType>
+      <renderPrecedence>70</renderPrecedence>
+      <statBases>
+         <Beauty>0</Beauty>
+         <WorkToBuild>250</WorkToBuild>
+      </statBases>
+      <costList>
+         <Steel>2</Steel>
+      </costList>
+      <researchPrerequisites>
+         <li>Stonecutting</li>
+      </researchPrerequisites>
+   </TerrainDef>
+   
+   <TerrainDef ParentName="FloorBase" Name="VFEArch_WoodenParquetBase" Abstract="True">
+      <description>Beautifully laid down wooden flooring for that posh, fancy feeling. Whilst beautiful, it takes a long time to lay down and is also very flammable.</description>
+      <texturePath>Terrains/Parquet</texturePath>
+      <renderPrecedence>228</renderPrecedence>
+      <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+      <costList>
+         <WoodLog>12</WoodLog>
+      </costList>
+      <statBases>
+         <WorkToBuild>3000</WorkToBuild>
+         <Beauty>2</Beauty>
+		 <Flammability>0.22</Flammability>
+      </statBases>
+      <constructEffect>ConstructWood</constructEffect>
+	  <designatorDropdown>VFEArch_WoodenParquet</designatorDropdown>
+   </TerrainDef>
+   
+   <TerrainDef ParentName="VFEArch_WoodenParquetBase">
+      <defName>VFEArch_WoodenParquet</defName>
+      <label>wooden parquet</label>
+      <color>(108,78,55)</color>
+   </TerrainDef>
+   
+   <TerrainDef ParentName="VFEArch_WoodenParquetBase">
+      <defName>VFEArch_WoodenParquetWalnut</defName>
+      <label>walnut wooden parquet</label>
+      <color>(79,60,45)</color>
+   </TerrainDef>
+   
+   <TerrainDef ParentName="VFEArch_WoodenParquetBase">
+      <defName>VFEArch_WoodenParquetBirch</defName>
+      <label>birch wooden parquet</label>
+      <color>(243,196,150)</color>
+   </TerrainDef>
+   
+   <TerrainDef ParentName="VFEArch_WoodenParquetBase">
+      <defName>VFEArch_WoodenParquetMahogany</defName>
+      <label>mahogany wooden parquet</label>
+      <color>(134,79,49)</color>
+   </TerrainDef>
+   
+   <!--Wooden floor colour variations-->
+  <TerrainDef  ParentName="FloorBase">
+    <defName>VFEArch_WoodPlankFloorWalnut</defName>
+    <label>walnut wood floor</label>
+    <renderPrecedence>250</renderPrecedence>
+    <description>Wood plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
+    <texturePath>Terrain/Surfaces/WoodFloor</texturePath>
+    <burnedDef>BurnedWoodPlankFloor</burnedDef>
+    <color>(79,60,45)</color>
+    <statBases>
+      <WorkToBuild>85</WorkToBuild>
+      <Flammability>0.22</Flammability>
+    </statBases>
+    <costList>
+      <WoodLog>3</WoodLog>
+    </costList>
+    <constructEffect>ConstructWood</constructEffect>
+	<designatorDropdown>VFEArch_WoodFloor</designatorDropdown>
+  </TerrainDef>
+  
+  <TerrainDef  ParentName="FloorBase">
+    <defName>VFEArch_WoodPlankFloorBirch</defName>
+    <label>birch wood floor</label>
+    <renderPrecedence>250</renderPrecedence>
+    <description>Wood plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
+    <texturePath>Terrain/Surfaces/WoodFloor</texturePath>
+    <burnedDef>BurnedWoodPlankFloor</burnedDef>
+    <color>(243,196,150)</color>
+    <statBases>
+      <WorkToBuild>85</WorkToBuild>
+      <Flammability>0.22</Flammability>
+    </statBases>
+    <costList>
+      <WoodLog>3</WoodLog>
+    </costList>
+    <constructEffect>ConstructWood</constructEffect>
+	<designatorDropdown>VFEArch_WoodFloor</designatorDropdown>
+  </TerrainDef>
+  
+  <TerrainDef  ParentName="FloorBase">
+    <defName>VFEArch_WoodPlankFloorMahogany</defName>
+    <label>mahogany wood floor</label>
+    <renderPrecedence>250</renderPrecedence>
+    <description>Wood plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
+    <texturePath>Terrain/Surfaces/WoodFloor</texturePath>
+    <burnedDef>BurnedWoodPlankFloor</burnedDef>
+    <color>(134,79,49)</color>
+    <statBases>
+      <WorkToBuild>85</WorkToBuild>
+      <Flammability>0.22</Flammability>
+    </statBases>
+    <costList>
+      <WoodLog>3</WoodLog>
+    </costList>
+    <constructEffect>ConstructWood</constructEffect>
+	<designatorDropdown>VFEArch_WoodFloor</designatorDropdown>
+  </TerrainDef>
+  
+  <!--====================================== Cobblestone floor =======================================-->
+  
+  <TerrainDef Abstract="True" ParentName="FloorBase" Name="CobblestoneBase">
+    <renderPrecedence>220</renderPrecedence>
+    <description>Random-size stone tiles for a rustical, castle feeling. Take less time to construct than ordinary stone tiles and don’t require stone cutting expertise, but lack the beauty of the polished design.</description>
+    <texturePath>Terrains/Cobblestone</texturePath>
+    <resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+    <statBases>
+      <WorkToBuild>200</WorkToBuild>
+      <Beauty>0</Beauty>
+    </statBases>
+    <designatorDropdown>VFEArch_CobblestoneFloor</designatorDropdown>
+  </TerrainDef>
+
+  <TerrainDef ParentName="CobblestoneBase">
+    <defName>VFEArch_CobblestoneFloorSandstone</defName>
+    <label>sandstone cobblestone floor</label>
+    <color>(126,104,94)</color>
+    <costList>
+      <BlocksSandstone>4</BlocksSandstone>
+    </costList>
+  </TerrainDef>
+
+  <TerrainDef ParentName="CobblestoneBase">
+    <defName>VFEArch_CobblestoneFloorGranite</defName>
+    <label>granite cobblestone floor</label>
+    <color>(105,95,97)</color>
+    <costList>
+      <BlocksGranite>4</BlocksGranite>
+    </costList>
+  </TerrainDef>
+
+  <TerrainDef ParentName="CobblestoneBase">
+    <defName>VFEArch_CobblestoneFloorLimestone</defName>
+    <label>limestone cobblestone floor</label>
+    <color>(158,153,135)</color>
+    <costList>
+      <BlocksLimestone>4</BlocksLimestone>
+    </costList>
+  </TerrainDef>
+
+  <TerrainDef ParentName="CobblestoneBase">
+    <defName>VFEArch_CobblestoneFloorSlate</defName>
+    <label>slate cobblestone floor</label>
+    <color>(105,105,105)</color>
+    <costList>
+      <BlocksSlate>4</BlocksSlate>
+    </costList>
+  </TerrainDef>
+
+  <TerrainDef ParentName="CobblestoneBase">
+    <defName>VFEArch_CobblestoneFloorMarble</defName>
+    <label>marble cobblestone floor</label>
+    <color>(132,135,132)</color>
+    <costList>
+      <BlocksMarble>4</BlocksMarble>
+    </costList>
+  </TerrainDef>
+  
+  <!--====================================== Polished stone floor =======================================-->
+  
+  <TerrainDef Abstract="True" ParentName="FloorBase" Name="PolishedStoneFloorBase">
+    <renderPrecedence>220</renderPrecedence>
+    <description>Fancy, polished stone tiles for an elegant, mansion-like look. Don’t take nearly as long to lay down as the finer stone floors, but require a lot of resources. They are incredibly beautiful to look at.</description>
+    <texturePath>Terrains/PolishedStoneFloor</texturePath>
+    <statBases>
+      <WorkToBuild>1500</WorkToBuild>
+      <Beauty>2</Beauty>
+    </statBases>
+    <designatorDropdown>VFEArch_PolishedStoneFloor</designatorDropdown>
+	<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+	<researchPrerequisites>
+        <li>Stonecutting</li>
+    </researchPrerequisites>
+  </TerrainDef>
+
+  <TerrainDef ParentName="PolishedStoneFloorBase">
+    <defName>VFEArch_PolishedStoneFloorSandstone</defName>
+    <label>sandstone polished stone floor</label>
+    <color>(126,104,94)</color>
+    <costList>
+      <BlocksSandstone>12</BlocksSandstone>
+    </costList>
+  </TerrainDef>
+
+  <TerrainDef ParentName="PolishedStoneFloorBase">
+    <defName>VFEArch_PolishedStoneFloorGranite</defName>
+    <label>granite polished stone floor</label>
+    <color>(105,95,97)</color>
+    <costList>
+      <BlocksGranite>12</BlocksGranite>
+    </costList>
+  </TerrainDef>
+
+  <TerrainDef ParentName="PolishedStoneFloorBase">
+    <defName>VFEArch_PolishedStoneFloorLimestone</defName>
+    <label>limestone polished stone floor</label>
+    <color>(158,153,135)</color>
+    <costList>
+      <BlocksLimestone>12</BlocksLimestone>
+    </costList>
+  </TerrainDef>
+
+  <TerrainDef ParentName="PolishedStoneFloorBase">
+    <defName>VFEArch_PolishedStoneFloorSlate</defName>
+    <label>slate polished stone floor</label>
+    <color>(105,105,105)</color>
+    <costList>
+      <BlocksSlate>12</BlocksSlate>
+    </costList>
+  </TerrainDef>
+
+  <TerrainDef ParentName="PolishedStoneFloorBase">
+    <defName>VFEArch_PolishedStoneFloorMarble</defName>
+    <label>marble polished stone floor</label>
+    <color>(132,135,132)</color>
+    <costList>
+      <BlocksMarble>12</BlocksMarble>
+    </costList>
+  </TerrainDef>
+  
+  <!--====================================== Stone slabs =======================================-->
+  
+  <TerrainDef Abstract="True" ParentName="FloorBase" Name="StoneSlabsBase">
+    <renderPrecedence>220</renderPrecedence>
+    <description>Large slabs of stone laid at random for that temple-like look. Beautiful to look at, they take a lot of work to place down and use up large amounts of resources.</description>
+    <texturePath>Terrains/StoneSlabs</texturePath>
+    <statBases>
+      <WorkToBuild>5000</WorkToBuild>
+      <Beauty>3</Beauty>
+    </statBases>
+    <designatorDropdown>VFEArch_StoneSlabs</designatorDropdown>
+    <researchPrerequisites>
+      <li>Stonecutting</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="StoneSlabsBase">
+    <defName>VFEArch_SlabsSandstone</defName>
+    <label>sandstone slabs</label>
+    <color>(126,104,94)</color>
+    <costList>
+      <BlocksSandstone>8</BlocksSandstone>
+    </costList>
+  </TerrainDef>
+
+  <TerrainDef ParentName="StoneSlabsBase">
+    <defName>VFEArch_SlabsGranite</defName>
+    <label>granite slabs</label>
+    <color>(105,95,97)</color>
+    <costList>
+      <BlocksGranite>8</BlocksGranite>
+    </costList>
+  </TerrainDef>
+
+  <TerrainDef ParentName="StoneSlabsBase">
+    <defName>VFEArch_SlabsLimestone</defName>
+    <label>limestone slabs</label>
+    <color>(158,153,135)</color>
+    <costList>
+      <BlocksLimestone>8</BlocksLimestone>
+    </costList>
+  </TerrainDef>
+
+  <TerrainDef ParentName="StoneSlabsBase">
+    <defName>VFEArch_SlabsSlate</defName>
+    <label>slate slabs</label>
+    <color>(100,100,100)</color>
+    <costList>
+      <BlocksSlate>8</BlocksSlate>
+  </costList>
+  </TerrainDef>
+
+  <TerrainDef ParentName="StoneSlabsBase">
+    <defName>VFEArch_SlabsMarble</defName>
+    <label>marble slabs</label>
+    <color>(132,135,132)</color>
+    <costList>
+      <BlocksMarble>8</BlocksMarble>
+    </costList>
+  </TerrainDef>
+  
+   
+</Defs>

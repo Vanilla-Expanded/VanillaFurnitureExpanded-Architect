@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <TerrainDef ParentName="NaturalTerrainBase">
+    <defName>VFEArch_Grass</defName>
+    <label>grass</label>
+	<description>Field of grass with patches of soil here and there. Very pleasant to look at, it requires no resources to construct.</description>
+    <texturePath>Terrains/Grass</texturePath>
+    <edgeType>FadeRough</edgeType>
+    <renderPrecedence>340</renderPrecedence>
+    <pathCost>2</pathCost>
+	<constructEffect>ConstructDirt</constructEffect>
+	<burnedDef>Soil</burnedDef>
+	<layerable>true</layerable>
+    <statBases>
+      <Beauty>0</Beauty>
+      <Cleanliness>-1</Cleanliness>
+	  <WorkToBuild>140</WorkToBuild>
+	  <Flammability>1</Flammability>
+    </statBases>
+    <scatterType>Rocky</scatterType>
+    <affordances>
+      <li>Light</li>
+      <li>Medium</li>
+      <li>Heavy</li>
+      <li>GrowSoil</li>
+      <li>Diggable</li>
+    </affordances>
+    <generatedFilth>Filth_Dirt</generatedFilth>
+    <fertility>1.0</fertility>
+    <takeFootprints>false</takeFootprints>
+    <tools>
+      <li>
+        <label>dirt</label>
+        <capacities>
+          <li>KickMaterialInEyes</li>
+        </capacities>
+        <hediff>DirtInEyes</hediff>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+    </tools>
+    <terrainAffordanceNeeded>VFEArch_Soil</terrainAffordanceNeeded>
+    <tags>
+      <li>Soil</li>
+    </tags>
+	<designationCategory>Floors</designationCategory>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="NaturalTerrainBase">
+    <defName>VFEArch_LawnPlot</defName>
+    <label>lawn plot</label>
+	<description>Beautifully trimmed grass with very high beauty value. Requires tremendous amounts of work to construct.</description>
+    <texturePath>Terrains/Lawn</texturePath>
+    <edgeType>FadeRough</edgeType>
+    <renderPrecedence>340</renderPrecedence>
+    <pathCost>2</pathCost>
+	<constructEffect>ConstructDirt</constructEffect>
+	<burnedDef>Soil</burnedDef>
+	<layerable>true</layerable>
+    <statBases>
+      <Beauty>2</Beauty>
+      <Cleanliness>-1</Cleanliness>
+	  <WorkToBuild>2000</WorkToBuild>
+	  <Flammability>1</Flammability>
+    </statBases>
+    <scatterType>Rocky</scatterType>
+    <affordances>
+      <li>Light</li>
+      <li>Medium</li>
+      <li>Heavy</li>
+      <li>GrowSoil</li>
+      <li>Diggable</li>
+    </affordances>
+    <generatedFilth>Filth_Dirt</generatedFilth>
+    <fertility>1.0</fertility>
+    <takeFootprints>false</takeFootprints>
+    <tools>
+      <li>
+        <label>dirt</label>
+        <capacities>
+          <li>KickMaterialInEyes</li>
+        </capacities>
+        <hediff>DirtInEyes</hediff>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+    </tools>
+	<terrainAffordanceNeeded>VFEArch_Soil</terrainAffordanceNeeded>
+    <tags>
+      <li>Soil</li>
+    </tags>
+	<designationCategory>Floors</designationCategory>
+  </TerrainDef>
+
+</Defs>

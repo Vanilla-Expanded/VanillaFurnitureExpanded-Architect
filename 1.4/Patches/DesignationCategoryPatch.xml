@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/DesignationCategoryDef[defName="Structure"]/specialDesignatorClasses</xpath>
+        <value>
+            <li>VFEArchitect.Designator_RemoveFoundation</li>
+		</value>
+    </Operation>
+	
+</Patch>
