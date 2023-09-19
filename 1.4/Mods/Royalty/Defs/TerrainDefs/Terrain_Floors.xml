@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+   <TerrainDef ParentName="FloorBase" Name="FineMetalTileBase" Abstract="True">
+      <description>Exquisite metal tiles, made with no compromises, for expressing economic status. Slow to construct.</description>
+      <texturePath>Terrains/FineMetalTile</texturePath>
+      <renderPrecedence>228</renderPrecedence>
+      <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+      <tags>
+         <li>FineFloor</li>
+      </tags>
+      <designatorDropdown>VFEArch_FineMetalFloor</designatorDropdown>
+      <researchPrerequisites>
+         <li>Smithing</li>
+      </researchPrerequisites>
+   </TerrainDef>
+   <TerrainDef ParentName="FineMetalTileBase">
+      <defName>VFEArch_FineSteelTile</defName>
+      <label>fine steel tile</label>
+      <renderPrecedence>241</renderPrecedence>
+      <color>(105,105,105)</color>
+      <statBases>
+         <Beauty>3</Beauty>
+         <WorkToBuild>800</WorkToBuild>
+         <Cleanliness>0.2</Cleanliness>
+      </statBases>
+      <costList>
+         <Steel>20</Steel>
+      </costList>
+   </TerrainDef>
+   <TerrainDef ParentName="FineMetalTileBase">
+      <defName>VFEArch_FineSilverTile</defName>
+      <label>fine silver tile</label>
+      <renderPrecedence>241</renderPrecedence>
+      <color>(0.45, 0.45, 0.45)</color>
+      <statBases>
+         <Beauty>7</Beauty>
+         <WorkToBuild>800</WorkToBuild>
+         <Cleanliness>0.2</Cleanliness>
+      </statBases>
+      <costList>
+         <Silver>200</Silver>
+      </costList>
+   </TerrainDef>
+   <TerrainDef ParentName="FineMetalTileBase">
+      <defName>VFEArch_FineGoldTile</defName>
+      <label>fine gold tile</label>
+      <renderPrecedence>241</renderPrecedence>
+      <color>(0.65, 0.65, 0.35)</color>
+      <statBases>
+         <Beauty>14</Beauty>
+         <WorkToBuild>800</WorkToBuild>
+         <Cleanliness>0.2</Cleanliness>
+      </statBases>
+      <costList>
+         <Gold>200</Gold>
+      </costList>
+   </TerrainDef>
+   <DesignatorDropdownGroupDef>
+      <defName>VFEArch_FineMetalFloor</defName>
+      <label>fine metal floor</label>
+   </DesignatorDropdownGroupDef>
+   <TerrainDef ParentName="FloorBase" Name="VFEArch_FineWoodenFloorBase" Abstract="True">
+      <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+      <costList>
+         <WoodLog>20</WoodLog>
+      </costList>
+      <statBases>
+         <WorkToBuild>5000</WorkToBuild>
+         <Beauty>3</Beauty>
+         <Flammability>0.22</Flammability>
+      </statBases>
+      <tags>
+         <li>FineFloor</li>
+      </tags>
+      <constructEffect>ConstructWood</constructEffect>
+      <designatorDropdown>VFEArch_FineWoodenFloor</designatorDropdown>
+   </TerrainDef>
+   <TerrainDef ParentName="VFEArch_FineWoodenFloorBase">
+      <defName>VFEArch_FineWoodenFloor</defName>
+      <label>fine wooden floor</label>
+      <description>Beautiful wooden parquet, made with no compromises, for expressing economic status. Slow to construct.</description>
+      <texturePath>Terrains/FineWoodenFloor</texturePath>
+      <renderPrecedence>228</renderPrecedence>
+      <color>(108,78,55)</color>
+   </TerrainDef>
+   <TerrainDef ParentName="VFEArch_FineWoodenFloorBase">
+      <defName>VFEArch_FineWoodenFloorWalnut</defName>
+      <label>walnut fine wooden floor</label>
+      <description>Beautiful wooden parquet, made with no compromises, for expressing economic status. Slow to construct.</description>
+      <texturePath>Terrains/FineWoodenFloor</texturePath>
+      <renderPrecedence>228</renderPrecedence>
+      <color>(79,60,45)</color>
+   </TerrainDef>
+   <TerrainDef ParentName="VFEArch_FineWoodenFloorBase">
+      <defName>VFEArch_FineWoodenFloorBirch</defName>
+      <label>birch fine wooden floor</label>
+      <description>Beautiful wooden parquet, made with no compromises, for expressing economic status. Slow to construct.</description>
+      <texturePath>Terrains/FineWoodenFloor</texturePath>
+      <renderPrecedence>228</renderPrecedence>
+      <color>(243,196,150)</color>
+   </TerrainDef>
+   <TerrainDef ParentName="VFEArch_FineWoodenFloorBase">
+      <defName>VFEArch_FineWoodenFloorMahogany</defName>
+      <label>mahogany fine wooden floor</label>
+      <description>Beautiful wooden parquet, made with no compromises, for expressing economic status. Slow to construct.</description>
+      <texturePath>Terrains/FineWoodenFloor</texturePath>
+      <renderPrecedence>228</renderPrecedence>
+      <color>(134,79,49)</color>
+   </TerrainDef>
+   <DesignatorDropdownGroupDef>
+      <defName>VFEArch_FineWoodenFloor</defName>
+      <label>fine wooden floor</label>
+   </DesignatorDropdownGroupDef>
+</Defs>
