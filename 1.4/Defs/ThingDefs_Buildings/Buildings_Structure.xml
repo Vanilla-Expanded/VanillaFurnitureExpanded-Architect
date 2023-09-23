@@ -166,6 +166,7 @@
         <texPath>Fences/ChainlinkFence/ChainlinkFence_Blueprint_Atlas</texPath>
         <graphicClass>Graphic_Single</graphicClass>
       </blueprintGraphicData>
+      <paintable>true</paintable>
     </building>
     <researchPrerequisites>
       <li>Smithing</li>
@@ -253,6 +254,7 @@ Picket fences are considerably more beautiful than alternatives, and evoke a nic
         <texPath>Fences/PicketFence/PicketFence_Blueprint_Atlas</texPath>
         <graphicClass>Graphic_Single</graphicClass>
       </blueprintGraphicData>
+      <paintable>true</paintable>
     </building>
   </ThingDef>
   
@@ -334,6 +336,7 @@ Picket fences are considerably more beautiful than alternatives, and evoke a nic
         <texPath>Fences/BrickFence/BrickFence_Blueprint_Atlas</texPath>
         <graphicClass>Graphic_Single</graphicClass>
       </blueprintGraphicData>
+      <paintable>true</paintable>
     </building>
     <researchPrerequisites>
       <li>Stonecutting</li>
@@ -500,6 +503,7 @@ Picket fences are considerably more beautiful than alternatives, and evoke a nic
         <texPath>Fences/LowFence/LowFence_Blueprint_Atlas</texPath>
         <graphicClass>Graphic_Single</graphicClass>
       </blueprintGraphicData>
+      <paintable>true</paintable>
     </building>
   </ThingDef>
   
@@ -647,6 +651,7 @@ Picket fences are considerably more beautiful than alternatives, and evoke a nic
       <blueprintGraphicData>
         <texPath>CellWall/CellWall_Blueprint_Atlas</texPath>
       </blueprintGraphicData>
+      <paintable>true</paintable>
     </building>
     <comps>
       <li Class="CompProperties_MeditationFocus">
@@ -695,6 +700,7 @@ Picket fences are considerably more beautiful than alternatives, and evoke a nic
       <blueprintGraphicData>
         <texPath>DoorCell/DoorCell_Blueprint</texPath>
       </blueprintGraphicData>
+      <paintable>true</paintable>
     </building>
     <stuffCategories Inherit="False">
       <li>Metallic</li>
@@ -775,6 +781,7 @@ Picket fences are considerably more beautiful than alternatives, and evoke a nic
       <blueprintGraphicData>
         <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
       </blueprintGraphicData>
+      <paintable>true</paintable>
     </building>
     <comps>
       <li Class="CompProperties_MeditationFocus">
@@ -820,6 +827,7 @@ Picket fences are considerably more beautiful than alternatives, and evoke a nic
       <blueprintGraphicData>
         <texPath>ArmoredDoor/ArmoredDoor_Blueprint</texPath>
       </blueprintGraphicData>
+      <paintable>true</paintable>
     </building>
     <stuffCategories Inherit="False">
       <li>Metallic</li>
@@ -862,6 +870,7 @@ Picket fences are considerably more beautiful than alternatives, and evoke a nic
       <blueprintGraphicData>
         <texPath>DoorSingle/DoorSingle_Blueprint</texPath>
       </blueprintGraphicData>
+      <paintable>true</paintable>
     </building>
     <costStuffCount>15</costStuffCount>
     <modExtensions>
@@ -882,6 +891,7 @@ Picket fences are considerably more beautiful than alternatives, and evoke a nic
       <blueprintGraphicData>
         <texPath>DoorSingle/DoorSingle_Blueprint_Flipped</texPath>
       </blueprintGraphicData>
+      <paintable>true</paintable>
     </building>
     <modExtensions>
       <li Class="VFEArchitect.DoorExtension_Flip" />
@@ -917,6 +927,7 @@ Picket fences are considerably more beautiful than alternatives, and evoke a nic
         <texPath>AnimalGate/AnimalGate_Blueprint</texPath>
         <graphicClass>Graphic_Multi</graphicClass>
       </blueprintGraphicData>
+      <paintable>true</paintable>
     </building>
   </ThingDef>
 

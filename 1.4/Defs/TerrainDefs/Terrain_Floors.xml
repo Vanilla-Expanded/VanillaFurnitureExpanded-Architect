@@ -35,6 +35,7 @@
       </statBases>
       <constructEffect>ConstructWood</constructEffect>
 	  <designatorDropdown>VFEArch_WoodenParquet</designatorDropdown>
+		<isPaintable>true</isPaintable>
    </TerrainDef>
    
    <TerrainDef ParentName="VFEArch_WoodenParquetBase">
@@ -79,6 +80,7 @@
     </costList>
     <constructEffect>ConstructWood</constructEffect>
 	<designatorDropdown>VFEArch_WoodFloor</designatorDropdown>
+    <isPaintable>true</isPaintable>
   </TerrainDef>
   
   <TerrainDef  ParentName="FloorBase">
@@ -98,6 +100,7 @@
     </costList>
     <constructEffect>ConstructWood</constructEffect>
 	<designatorDropdown>VFEArch_WoodFloor</designatorDropdown>
+    <isPaintable>true</isPaintable>
   </TerrainDef>
   
   <TerrainDef  ParentName="FloorBase">
@@ -117,6 +120,7 @@
     </costList>
     <constructEffect>ConstructWood</constructEffect>
 	<designatorDropdown>VFEArch_WoodFloor</designatorDropdown>
+    <isPaintable>true</isPaintable>
   </TerrainDef>
   
   <!--====================================== Cobblestone floor =======================================-->
@@ -131,6 +135,7 @@
       <Beauty>0</Beauty>
     </statBases>
     <designatorDropdown>VFEArch_CobblestoneFloor</designatorDropdown>
+    <isPaintable>true</isPaintable>
   </TerrainDef>
 
   <TerrainDef ParentName="CobblestoneBase">
@@ -193,6 +198,7 @@
 	<researchPrerequisites>
         <li>Stonecutting</li>
     </researchPrerequisites>
+    <isPaintable>true</isPaintable>
   </TerrainDef>
 
   <TerrainDef ParentName="PolishedStoneFloorBase">
@@ -255,6 +261,7 @@
       <li>Stonecutting</li>
     </researchPrerequisites>
     <constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+    <isPaintable>true</isPaintable>
   </TerrainDef>
   
   <TerrainDef ParentName="StoneSlabsBase">

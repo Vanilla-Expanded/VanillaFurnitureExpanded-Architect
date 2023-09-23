@@ -9,6 +9,7 @@ Can be made out of any stone blocks.</description>
     <uiIconPath>StoneBridge/StoneBridge_MenuIcon</uiIconPath>
     <layerable>true</layerable>
     <bridge>true</bridge>
+    <isPaintable>true</isPaintable>
     <affordances>
       <li>Light</li>
 	  <li>Medium</li>
@@ -101,6 +102,7 @@ Can be made out of any stone blocks.</description>
     <uiIconPath>SteelBridge/SteelBridge_MenuIcon</uiIconPath>
     <layerable>true</layerable>
     <bridge>true</bridge>
+    <isPaintable>true</isPaintable>
     <affordances>
       <li>Light</li>
 	  <li>Medium</li>
