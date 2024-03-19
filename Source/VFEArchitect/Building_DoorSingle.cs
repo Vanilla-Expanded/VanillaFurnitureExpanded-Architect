@@ -14,10 +14,10 @@ namespace VFEArchitect
             flip = def.HasModExtension<DoorExtension_Flip>();
         }
 
-        public override void Draw()
+        protected override void DrawAt(Vector3 drawLoc, bool flip = false)
         {
-            Rotation = DoorRotationAt(Position, Map);
-            var d = 0f + 0.9f * Mathf.Clamp01(ticksSinceOpen / (float)TicksToOpenNow);
+            DoorPreDraw();
+            var d = 0f + 0.9f * OpenPct;
             var vector = new Vector3(0f, 0f, -1f);
             var mesh = MeshPool.plane10;
             var rotation = Rotation;
@@ -32,7 +32,5 @@ namespace VFEArchitect
         }
     }
 
-    public class DoorExtension_Flip : DefModExtension
-    {
-    }
+    public class DoorExtension_Flip : DefModExtension { }
 }

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <TerrainTemplateDef>
+        <defName>VFEArch_WoolCarpet</defName>
+        <label>wooly carpet ({0})</label>
+        <description>text.todo</description>
+        <texturePath>Terrains/WoolyCarpet</texturePath>
+        <researchPrerequisites>
+          <li>CarpetMaking</li>
+        </researchPrerequisites>
+        <ignoreIllegalLabelCharacterConfigError>true</ignoreIllegalLabelCharacterConfigError>
+        <burnedDef>BurnedCarpet</burnedDef>
+        <designatorDropdown>VFEArch_WoolCarpet</designatorDropdown>
+        <costList>
+          <Cloth>7</Cloth>
+        </costList>
+        <tags>
+          <li>Floor</li>
+        </tags>
+        <statBases>
+          <Beauty>2</Beauty>
+          <Flammability>0.32</Flammability>
+          <WorkToBuild>800</WorkToBuild>
+        </statBases>
+        <uiOrder>2115</uiOrder>
+        <renderPrecedenceStart>200</renderPrecedenceStart>
+      </TerrainTemplateDef>
+</Defs>

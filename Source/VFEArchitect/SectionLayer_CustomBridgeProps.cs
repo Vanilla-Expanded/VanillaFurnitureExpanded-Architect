@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using RimWorld;
+using UnityEngine;
 using Verse;
 
 namespace VFEArchitect
@@ -20,7 +21,7 @@ namespace VFEArchitect
             });
         }
 
-        public SectionLayer_CustomBridgeProps(Section section) : base(section) => relevantChangeTypes = MapMeshFlag.Terrain;
+        public SectionLayer_CustomBridgeProps(Section section) : base(section) => relevantChangeTypes = MapMeshFlagDefOf.Terrain;
 
         public override void Regenerate()
         {

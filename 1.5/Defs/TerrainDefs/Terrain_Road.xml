@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <TerrainDef ParentName="FloorBase">
+    <defName>VFEArch_PlayerBrokenAsphalt</defName>
+    <label>broken asphalt</label>
+    <description>Old, broken apart asphalt, often found in the form of ancient highways around abandoned locations. Very easy to traverse for people and vehicles alike.</description>
+    <costList>
+        <Steel>1</Steel>
+    </costList>
+    <designationCategory>Floors</designationCategory>
+    <researchPrerequisites>
+        <li>Stonecutting</li>
+    </researchPrerequisites>
+    <texturePath>Terrain/Surfaces/BrokenAsphalt</texturePath>
+    <layerable>true</layerable>
+    <edgeType>FadeRough</edgeType>
+    <renderPrecedence>370</renderPrecedence>
+    <pathCost>0</pathCost>
+    <resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+    <statBases>
+      <Beauty>-1</Beauty>
+      <Cleanliness>-1</Cleanliness>
+      <WorkToBuild>70</WorkToBuild>
+    </statBases>
+    <scatterType>Rocky</scatterType>
+    <affordances>
+      <li>Light</li>
+      <li>Medium</li>
+      <li>Heavy</li>
+    </affordances>
+    <fertility>0.0</fertility>
+    <tags>
+      <li>Floor</li>
+    </tags>
+  </TerrainDef>
+
+  <TerrainDef ParentName="FloorBase">
+    <defName>VFEArch_PlayerPackedDirt</defName>
+    <label>packed dirt</label>
+    <texturePath>Terrain/Surfaces/PackedDirt</texturePath>
+	<designationCategory>Floors</designationCategory>
+	<description>Packed dirt, slightly enhancing movement speed, often forming paths around places of interest.</description>
+	<layerable>true</layerable>
+	<constructEffect>ConstructDirt</constructEffect>
+    <edgeType>FadeRough</edgeType>
+    <renderPrecedence>360</renderPrecedence>
+    <pathCost>1</pathCost>
+    <resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+    <statBases>
+      <Beauty>-1</Beauty>
+      <Cleanliness>-1</Cleanliness>
+	  <WorkToBuild>50</WorkToBuild>
+	  <FilthMultiplier>0</FilthMultiplier>
+    </statBases>
+    <scatterType>Rocky</scatterType>
+    <affordances>
+      <li>Light</li>
+      <li>Medium</li>
+      <li>Heavy</li>
+      <li>Diggable</li>
+    </affordances>
+    <fertility>0.0</fertility>
+    <tags>
+      <li>Floor</li>
+    </tags>
+  </TerrainDef>
+  
+</Defs>
