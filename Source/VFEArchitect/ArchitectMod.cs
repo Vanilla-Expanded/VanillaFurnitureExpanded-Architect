@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Reflection.Emit;
 using HarmonyLib;
-using MonoMod.Utils;
 using RimWorld;
-using UnityEngine;
 using Verse;
 
 namespace VFEArchitect
@@ -14,15 +11,6 @@ namespace VFEArchitect
     {
         private static readonly AccessTools.FieldRef<Designator_Build, BuildableDef> desEntDef =
             AccessTools.FieldRefAccess<Designator_Build, BuildableDef>("entDef");
-
-        private static readonly AccessTools.FieldRef<Designator_Build, ThingDef> desStuffDef =
-            AccessTools.FieldRefAccess<Designator_Build, ThingDef>("stuffDef");
-
-        private static readonly AccessTools.FieldRef<Designator_Build, bool> desWriteStuff =
-            AccessTools.FieldRefAccess<Designator_Build, bool>("writeStuff");
-
-        private static readonly Action<Designator_Build, Event> desBaseProcessInput =
-            AccessTools.Method(typeof(Designator_Build), "<>n__0").CreateDelegate<Action<Designator_Build, Event>>();
 
         private static readonly AccessTools.StructFieldRef<StatRequest, ThingDef> statReqStuff =
             AccessTools.StructFieldRefAccess<StatRequest, ThingDef>("stuffDefInt");
