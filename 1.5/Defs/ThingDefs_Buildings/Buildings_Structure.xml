@@ -59,6 +59,7 @@
 	<soundImpactDefault>BulletImpact_Wood</soundImpactDefault>
     <fertility>0</fertility>
     <building>
+	 <supportsWallAttachments>true</supportsWallAttachments>
       <isInert>true</isInert>
       <isPlaceOverableWall>true</isPlaceOverableWall>
       <ai_chillDestination>false</ai_chillDestination>
@@ -775,6 +776,7 @@ Picket fences are considerably more beautiful than alternatives, and evoke a nic
     <canOverlapZones>false</canOverlapZones>
     <fertility>0</fertility>
     <building>
+	 <supportsWallAttachments>true</supportsWallAttachments>
       <isInert>true</isInert>
       <isPlaceOverableWall>true</isPlaceOverableWall>
       <ai_chillDestination>false</ai_chillDestination>
