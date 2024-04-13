@@ -71,6 +71,7 @@
          <li>Stony</li>
       </stuffCategories>
       <building>
+	   <supportsWallAttachments>true</supportsWallAttachments>
          <isInert>true</isInert>
          <isPlaceOverableWall>true</isPlaceOverableWall>
          <ai_chillDestination>false</ai_chillDestination>
