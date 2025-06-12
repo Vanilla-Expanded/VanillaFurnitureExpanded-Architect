@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <DesignatorDropdownGroupDef>
+    <defName>VFEArch_StoneBridge</defName>
+    <label>stone bridge</label>
+  </DesignatorDropdownGroupDef>
+  
+  <DesignatorDropdownGroupDef>
+    <defName>VFEArch_WoodFloor</defName>
+    <label>wood floor</label>
+  </DesignatorDropdownGroupDef>
+  
+  <DesignatorDropdownGroupDef>
+    <defName>VFEArch_CobblestoneFloor</defName>
+    <label>cobblestone floor</label>
+  </DesignatorDropdownGroupDef>
+  
+  <DesignatorDropdownGroupDef>
+    <defName>VFEArch_PolishedStoneFloor</defName>
+    <label>polished stone floor</label>
+  </DesignatorDropdownGroupDef>
+  
+  <DesignatorDropdownGroupDef>
+    <defName>VFEArch_StoneSlabs</defName>
+    <label>stone slabs</label>
+  </DesignatorDropdownGroupDef>
+  
+  <DesignatorDropdownGroupDef>
+    <defName>VFEArch_PicketFence</defName>
+    <label>picket fence</label>
+  </DesignatorDropdownGroupDef>
+  
+  <DesignatorDropdownGroupDef>
+    <defName>VFEArch_WoodenParquet</defName>
+    <label>wooden parquet</label>
+  </DesignatorDropdownGroupDef>
+  
+  <DesignatorDropdownGroupDef>
+    <defName>VFEArch_WoolCarpet</defName>
+    <label>wooly carpet</label>
+    <iconSource>Placed</iconSource>
+    <useGridMenu>true</useGridMenu>
+    <includeEyeDropperTool>true</includeEyeDropperTool>
+  </DesignatorDropdownGroupDef>
+
+</Defs>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/TerrainDef[defName="MossyTerrain" or defName="MarshyTerrain" or defName="SoftSand" or defName="Mud" or defName="Soil" or defName="SoilRich" or defName="Gravel" or defName="Sand" or defName="Ice"]/affordances</xpath>
+        <value>
+            <li>VFEArch_Foundation</li>
+		</value>
+    </Operation>
+	
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/TerrainDef[defName="Soil"]/affordances</xpath>
+        <value>
+            <li>VFEArch_Soil</li>
+		</value>
+    </Operation>
+	
+</Patch>

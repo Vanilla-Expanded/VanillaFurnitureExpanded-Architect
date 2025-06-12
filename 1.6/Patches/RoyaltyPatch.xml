@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+   <Operation Class="PatchOperationFindMod">
+      <mods>
+         <li>Royalty</li>
+      </mods>
+      <match Class="PatchOperationSequence">
+         <operations>
+            <li Class="PatchOperationAdd">
+               <xpath>/Defs</xpath>
+               <value>
+                  <TerrainDef ParentName="FloorBase" Name="FineMetalTileBase" Abstract="True">
+                     <description>Exquisite metal tiles, made with no compromises, for expressing economic status. Slow to construct.</description>
+                     <texturePath>Terrains/FineMetalTile</texturePath>
+                     <renderPrecedence>228</renderPrecedence>
+                     <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+                     <tags>
+                        <li>FineFloor</li>
+                     </tags>
+					 <designatorDropdown>VFEArch_FineMetalFloor</designatorDropdown>
+                     <researchPrerequisites>
+                        <li>Smithing</li>
+                     </researchPrerequisites>
+                  </TerrainDef>
+                  <TerrainDef ParentName="FineMetalTileBase">
+                     <defName>VFEArch_FineSteelTile</defName>
+                     <label>fine steel tile</label>
+                     <renderPrecedence>241</renderPrecedence>
+                     <color>(105,105,105)</color>
+                     <statBases>
+                        <Beauty>3</Beauty>
+                        <WorkToBuild>800</WorkToBuild>
+                        <Cleanliness>0.2</Cleanliness>
+                     </statBases>
+                     <costList>
+                        <Steel>20</Steel>
+                     </costList>
+                  </TerrainDef>
+                  <TerrainDef ParentName="FineMetalTileBase">
+                     <defName>VFEArch_FineSilverTile</defName>
+                     <label>fine silver tile</label>
+                     <renderPrecedence>241</renderPrecedence>
+                     <color>(0.45, 0.45, 0.45)</color>
+                     <statBases>
+                        <Beauty>7</Beauty>
+                        <WorkToBuild>800</WorkToBuild>
+                        <Cleanliness>0.2</Cleanliness>
+                     </statBases>
+                     <costList>
+                        <Silver>200</Silver>
+                     </costList>
+                  </TerrainDef>
+                  <TerrainDef ParentName="FineMetalTileBase">
+                     <defName>VFEArch_FineGoldTile</defName>
+                     <label>fine gold tile</label>
+                     <renderPrecedence>241</renderPrecedence>
+                     <color>(0.65, 0.65, 0.35)</color>
+                     <statBases>
+                        <Beauty>14</Beauty>
+                        <WorkToBuild>800</WorkToBuild>
+                        <Cleanliness>0.2</Cleanliness>
+                     </statBases>
+                     <costList>
+                        <Gold>200</Gold>
+                     </costList>
+                  </TerrainDef>
+                  <DesignatorDropdownGroupDef>
+                     <defName>VFEArch_FineMetalFloor</defName>
+                     <label>fine metal floor</label>
+                  </DesignatorDropdownGroupDef>
+               </value>
+            </li>
+         </operations>
+      </match>
+   </Operation>
+   
+   <Operation Class="PatchOperationFindMod">
+      <mods>
+         <li>Royalty</li>
+      </mods>
+      <nomatch Class="PatchOperationSequence">
+         <operations>
+            <li Class="PatchOperationRemove">
+               <xpath>/Defs/TerrainDef[defName="VFEArch_FineWoodenFloor" or defName="VFEArch_FineWoodenFloorWalnut" or defName="VFEArch_FineWoodenFloorBirch" or defName="VFEArch_FineWoodenFloorMahogany"]</xpath>
+            </li>
+         </operations>
+      </nomatch>
+   </Operation>
+   
+   <Operation Class="PatchOperationFindMod">
+      <mods>
+         <li>Royalty</li>
+      </mods>
+      <nomatch Class="PatchOperationSequence">
+         <operations>
+            <li Class="PatchOperationRemove">
+               <xpath>/Defs/ThingDef[defName="VFEArch_FineWall"]</xpath>
+            </li>
+         </operations>
+      </nomatch>
+   </Operation>
+   
+   <Operation Class="PatchOperationFindMod">
+      <mods>
+         <li>Royalty</li>
+      </mods>
+      <nomatch Class="PatchOperationSequence">
+         <operations>
+            <li Class="PatchOperationRemove">
+               <xpath>/Defs/DesignatorDropdownGroupDef[defName="VFEArch_FineWoodenFloor"]</xpath>
+            </li>
+         </operations>
+      </nomatch>
+   </Operation>
+</Patch>
+
