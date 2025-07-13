@@ -1,49 +1,34 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <TerrainDef Abstract="True" Name="StoneBridgeBase">
+  <TerrainDef Abstract="True" Name="StoneBridgeBase" ParentName="BridgeBase">
     <description>Stone Bridges are structures that can be built on water. Bridges allow more rapid movement across water. Once built, they can support many structures, including heavy structures and any type of wall. Bridges allow for easier building in swampy biomes.
 	
 Can be made out of any stone blocks.</description>
     <texturePath>StoneBridge/StoneBridge</texturePath>
     <uiIconPath>StoneBridge/StoneBridge_MenuIcon</uiIconPath>
-    <layerable>true</layerable>
-    <bridge>true</bridge>
-    <isPaintable>true</isPaintable>
     <affordances>
       <li>Light</li>
-	  <li>Medium</li>
-	  <li>Heavy</li>
+	    <li>Medium</li>
+	    <li>Heavy</li>
     </affordances>
     <researchPrerequisites>
       <li>Stonecutting</li>
     </researchPrerequisites>
     <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
-    <designationCategory>Structure</designationCategory>
-    <fertility>0</fertility>
-    <terrainAffordanceNeeded>Bridgeable</terrainAffordanceNeeded>
-    <edgeType>Hard</edgeType>
-    <renderPrecedence>400</renderPrecedence>
-    <autoRebuildable>true</autoRebuildable>
     <statBases>
       <WorkToBuild>2500</WorkToBuild>
       <Flammability>0</Flammability>
       <Beauty>1</Beauty>
     </statBases>
-    <tags>
-      <li>Floor</li>
-    </tags>
     <destroyOnBombDamageThreshold>50</destroyOnBombDamageThreshold>
-    <destroyBuildingsOnDestroyed>true</destroyBuildingsOnDestroyed>
-    <destroyEffect>Bridge_Collapse</destroyEffect>
-    <destroyEffectWater>Bridge_CollapseWater</destroyEffectWater>
-	<designatorDropdown>VFEArch_StoneBridge</designatorDropdown>
-  <modExtensions>
-    <li Class="VFEArchitect.TerrainExtension_CustomBridgeProps">
-      <loopPath>StoneBridge/StoneBridgeProps_Loop</loopPath>
-      <rightPath>StoneBridge/StoneBridgeProps_Right</rightPath>
-    </li>
-  </modExtensions>
+	  <designatorDropdown>VFEArch_StoneBridge</designatorDropdown>
+    <modExtensions>
+      <li Class="VFEArchitect.TerrainExtension_CustomBridgeProps">
+        <loopPath>StoneBridge/StoneBridgeProps_Loop</loopPath>
+        <rightPath>StoneBridge/StoneBridgeProps_Right</rightPath>
+      </li>
+    </modExtensions>
   </TerrainDef>
   
   <TerrainDef ParentName="StoneBridgeBase">
@@ -96,52 +81,6 @@ Can be made out of any stone blocks.</description>
     </costList>
   </TerrainDef>
   
-  <TerrainDef Abstract="True" Name="SteelBridgeBase">
-    <description>Steel Bridges are structures that can be built on water. Bridges allow more rapid movement across water. Once built, they can support many structures, including heavy structures and any other type of wall. Steel bridges are extremely durable. Bridges allow for easier building in swampy biomes.</description>
-    <texturePath>SteelBridge/SteelBridge</texturePath>
-    <uiIconPath>SteelBridge/SteelBridge_MenuIcon</uiIconPath>
-    <layerable>true</layerable>
-    <bridge>true</bridge>
-    <isPaintable>true</isPaintable>
-    <affordances>
-      <li>Light</li>
-	  <li>Medium</li>
-	  <li>Heavy</li>
-    </affordances>
-    <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
-    <designationCategory>Structure</designationCategory>
-    <fertility>0</fertility>
-    <terrainAffordanceNeeded>Bridgeable</terrainAffordanceNeeded>
-    <edgeType>Hard</edgeType>
-    <renderPrecedence>400</renderPrecedence>
-    <autoRebuildable>true</autoRebuildable>
-    <statBases>
-      <WorkToBuild>2500</WorkToBuild>
-      <Flammability>0</Flammability>
-    </statBases>
-    <tags>
-      <li>Floor</li>
-    </tags>
-    <destroyOnBombDamageThreshold>50</destroyOnBombDamageThreshold>
-    <destroyBuildingsOnDestroyed>true</destroyBuildingsOnDestroyed>
-    <destroyEffect>Bridge_Collapse</destroyEffect>
-    <destroyEffectWater>Bridge_CollapseWater</destroyEffectWater>
-    <modExtensions>
-      <li Class="VFEArchitect.TerrainExtension_CustomBridgeProps">
-        <loopPath>SteelBridge/SteelBridgeProps_Loop</loopPath>
-        <rightPath>SteelBridge/SteelBridgeProps_Right</rightPath>
-      </li>
-    </modExtensions>
-  </TerrainDef>
-  
-  <TerrainDef ParentName="SteelBridgeBase">
-    <defName>VFEArch_BridgeSteel</defName>
-    <label>steel bridge</label>
-    <costList>
-      <Steel>12</Steel>
-    </costList>
-  </TerrainDef>
-  
   <TerrainDef>
     <defName>VFEArch_ConcreteFoundation</defName>
     <label>concrete foundation</label>
@@ -149,15 +88,17 @@ Can be made out of any stone blocks.</description>
     <texturePath>Terrain/Surfaces/Concrete</texturePath>
     <uiIconPath>ConcreteFoundation/Foundation_MenuIcon</uiIconPath>
     <layerable>true</layerable>
+    <isFoundation>true</isFoundation>
     <affordances>
       <li>Light</li>
-	  <li>Medium</li>
-	  <li>Heavy</li>
+	    <li>Medium</li>
+	    <li>Heavy</li>
     </affordances>
     <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
     <designationCategory>Structure</designationCategory>
     <fertility>0</fertility>
     <terrainAffordanceNeeded>VFEArch_Foundation</terrainAffordanceNeeded>
+    <preventCraters>true</preventCraters>
     <edgeType>Hard</edgeType>
     <renderPrecedence>400</renderPrecedence>
     <autoRebuildable>true</autoRebuildable>
@@ -172,9 +113,11 @@ Can be made out of any stone blocks.</description>
       <li>Floor</li>
     </tags>
     <destroyOnBombDamageThreshold>50</destroyOnBombDamageThreshold>
+    <drawStyleCategory>Foundations</drawStyleCategory>
     <destroyBuildingsOnDestroyed>true</destroyBuildingsOnDestroyed>
     <destroyEffect>Bridge_Collapse</destroyEffect>
     <destroyEffectWater>Bridge_CollapseWater</destroyEffectWater>
+    <cropIcon>false</cropIcon>
     <researchPrerequisites>
       <li>Stonecutting</li>
     </researchPrerequisites>
@@ -184,7 +127,6 @@ Can be made out of any stone blocks.</description>
         <rightPath>ConcreteFoundation/FoundationProps_Right</rightPath>
         <alwaysShow>true</alwaysShow>
       </li>
-      <li Class="VFEArchitect.TerrainExtension_Foundation" />
     </modExtensions>
   </TerrainDef>
 

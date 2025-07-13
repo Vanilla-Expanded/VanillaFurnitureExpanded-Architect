@@ -51,7 +51,6 @@
   <ItemGroup>
     <Compile Include="ArchitectMod.cs" />
     <Compile Include="Building_DoorSingle.cs" />
-    <Compile Include="Designator_RemoveFoundation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SectionLayer_CustomBridgeProps.cs" />
   </ItemGroup>

@@ -18,7 +18,6 @@ namespace VFEArchitect
         private static readonly HashSet<BuildableDef> requireGodMode = new HashSet<BuildableDef>();
         private static readonly HashSet<ThingDef> prisonerProof = new HashSet<ThingDef>();
         internal static HashSet<TerrainDef> customBridges = new HashSet<TerrainDef>();
-        private static readonly HashSet<TerrainDef> foundations = new HashSet<TerrainDef>();
         private static readonly HashSet<ThingDef> ignoreStuffFor = new HashSet<ThingDef>();
 
         private static Harmony harm;
@@ -38,7 +37,6 @@ namespace VFEArchitect
                 foreach (var def in DefDatabase<TerrainDef>.AllDefs)
                 {
                     if (def.HasModExtension<TerrainExtension_CustomBridgeProps>()) customBridges.Add(def);
-                    if (def.HasModExtension<TerrainExtension_Foundation>()) foundations.Add(def);
                     if (def.HasModExtension<BuildExtension_RequireGodMode>()) requireGodMode.Add(def);
                 }
 
