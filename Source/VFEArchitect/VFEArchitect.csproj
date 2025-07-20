@@ -50,9 +50,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ArchitectMod.cs" />
-    <Compile Include="Building_DoorSingle.cs" />
+    <Compile Include="Building\Building_DoorSingle.cs" />
+    <Compile Include="DefModExtensions\DefModExtensions.cs" />
+    <Compile Include="Harmony\Building_Door_TicksToOpenNow.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SectionLayer_CustomBridgeProps.cs" />
+    <Compile Include="SectionLayers\SectionLayer_CustomBridgeProps.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

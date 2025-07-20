@@ -778,6 +778,7 @@ Picket fences are considerably more beautiful than alternatives, and evoke a nic
     <building>
 	 <supportsWallAttachments>true</supportsWallAttachments>
       <isInert>true</isInert>
+	   <isStuffableAirtight>true</isStuffableAirtight>
       <isPlaceOverableWall>true</isPlaceOverableWall>
       <ai_chillDestination>false</ai_chillDestination>
       <blueprintGraphicData>
@@ -830,6 +831,7 @@ Picket fences are considerably more beautiful than alternatives, and evoke a nic
         <texPath>ArmoredDoor/ArmoredDoor_Blueprint</texPath>
       </blueprintGraphicData>
       <paintable>true</paintable>
+	   <isStuffableAirtight>true</isStuffableAirtight>
     </building>
     <stuffCategories Inherit="False">
       <li>Metallic</li>
@@ -858,7 +860,7 @@ Picket fences are considerably more beautiful than alternatives, and evoke a nic
     <statBases>
       <WorkToBuild>650</WorkToBuild>
 	  <MaxHitPoints>120</MaxHitPoints>
-    <DoorOpenSpeed>2.5</DoorOpenSpeed>
+		<DoorOpenSpeed>2.5</DoorOpenSpeed>
     </statBases>
     <graphicData>
       <texPath>DoorSingle/DoorSingle_Mover</texPath>
@@ -875,11 +877,7 @@ Picket fences are considerably more beautiful than alternatives, and evoke a nic
       <paintable>true</paintable>
     </building>
     <costStuffCount>15</costStuffCount>
-    <modExtensions>
-      <li Class="VFEArchitect.ThingExtension_IgnoreStuffFor">
-        <stats><li>DoorOpenSpeed</li></stats>
-      </li>
-    </modExtensions>
+  
   </ThingDef>
 
   <ThingDef ParentName="VFEArch_SingleDoor">

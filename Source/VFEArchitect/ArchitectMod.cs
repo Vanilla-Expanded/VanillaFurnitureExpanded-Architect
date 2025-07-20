@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Reflection.Emit;
 using HarmonyLib;
 using RimWorld;
@@ -18,20 +19,21 @@ namespace VFEArchitect
         private static readonly HashSet<BuildableDef> requireGodMode = new HashSet<BuildableDef>();
         private static readonly HashSet<ThingDef> prisonerProof = new HashSet<ThingDef>();
         internal static HashSet<TerrainDef> customBridges = new HashSet<TerrainDef>();
-        private static readonly HashSet<ThingDef> ignoreStuffFor = new HashSet<ThingDef>();
+       
 
         private static Harmony harm;
 
         public ArchitectMod(ModContentPack content) : base(content)
         {
             harm = new Harmony("vanillaexpanded.furniture.architect");
+            harm.PatchAll(Assembly.GetExecutingAssembly());
             LongEventHandler.ExecuteWhenFinished(() =>
             {
                 foreach (var def in DefDatabase<ThingDef>.AllDefs)
                 {
                     if (def.HasModExtension<BuildExtension_RequireGodMode>()) requireGodMode.Add(def);
                     if (def.HasModExtension<BuildingExtension_PrisonerProof>()) prisonerProof.Add(def);
-                    if (def.HasModExtension<ThingExtension_IgnoreStuffFor>()) ignoreStuffFor.Add(def);
+                   
                 }
 
                 foreach (var def in DefDatabase<TerrainDef>.AllDefs)
@@ -52,13 +54,7 @@ namespace VFEArchitect
                     harm.Patch(AccessTools.Method(typeof(SectionLayer_BridgeProps), "ShouldDrawPropsBelow"),
                         postfix: new HarmonyMethod(typeof(ArchitectMod), nameof(IsVanillaBridge)));
 
-                if (ignoreStuffFor.Any())
-                {
-                    harm.Patch(AccessTools.Method(typeof(StatWorker), nameof(StatWorker.GetValueUnfinalized)),
-                        new HarmonyMethod(typeof(ArchitectMod), nameof(StatIgnoreStuff)));
-                    harm.Patch(AccessTools.Method(typeof(StatWorker), nameof(StatWorker.GetExplanationFull)),
-                        new HarmonyMethod(typeof(ArchitectMod), nameof(StatIgnoreStuff)));
-                }
+                
             });
         }
 
@@ -100,20 +96,10 @@ namespace VFEArchitect
             return true;
         }
 
-        public static void StatIgnoreStuff(ref StatRequest req, StatDef ___stat)
-        {
-            if (req.HasThing && req.StuffDef != null && ignoreStuffFor.Contains(req.Def) &&
-                req.Def.GetModExtension<ThingExtension_IgnoreStuffFor>().stats.Contains(___stat))
-                statReqStuff(ref req) = null;
-        }
+       
     }
 
-    public class BuildExtension_RequireGodMode : DefModExtension { }
+   
 
-    public class BuildingExtension_PrisonerProof : DefModExtension { }
-
-    public class ThingExtension_IgnoreStuffFor : DefModExtension
-    {
-        public List<StatDef> stats;
-    }
+   
 }

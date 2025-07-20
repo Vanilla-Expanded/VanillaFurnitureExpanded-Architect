@@ -1,6 +1,7 @@
 ﻿using RimWorld;
 using UnityEngine;
 using Verse;
+using Verse.Sound;
 
 namespace VFEArchitect
 {
@@ -30,7 +31,8 @@ namespace VFEArchitect
             Graphic.ShadowGraphic?.DrawWorker(vector2, Rotation, def, this, 0f);
             Comps_PostDraw();
         }
+       
+
     }
 
-    public class DoorExtension_Flip : DefModExtension { }
 }
