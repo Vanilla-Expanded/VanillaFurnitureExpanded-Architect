@@ -9,6 +9,7 @@
 		<li>1.5</li>
 		<li>1.6</li>
 	</supportedVersions>
+	<modIconPath IgnoreIfNoMatchingField="True">UI/VELogo</modIconPath>
 	<packageId>VanillaExpanded.VFEArchitect</packageId>
 	<description>Vanilla Furniture Expanded - Architect has been on my mind for a very long time. I always download every single mod adding new floors or fences, but I quickly become buried under all the new options, and eventually get pissed off because some of those options don't exactly fit Vanilla game in my eyes.
 	
