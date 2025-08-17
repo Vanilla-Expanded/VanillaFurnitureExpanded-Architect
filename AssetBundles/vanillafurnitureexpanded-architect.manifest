@@ -1,0 +1,28 @@
+ManifestFileVersion: 0
+CRC: 345171054
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 056cc15b17d12341a58df3b91b9d2933
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 7859cd501ea75098bcf7e53f1b477c26
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Data/VanillaExpanded.VFEArchitect/Textures/StoneBridge/StoneBridgePropsLimestone_Loop.psd
+- Assets/Data/VanillaExpanded.VFEArchitect/Textures/StoneBridge/StoneBridgePropsSandstone_Loop.psd
+- Assets/Data/VanillaExpanded.VFEArchitect/Textures/SteelBridge/SteelBridgeProps_Loop.psd
+- Assets/Data/VanillaExpanded.VFEArchitect/Textures/StoneBridge/StoneBridgePropsGranite_Loop.psd
+- Assets/Data/VanillaExpanded.VFEArchitect/Textures/StoneBridge/StoneBridgePropsSandstone_Right.psd
+- Assets/Data/VanillaExpanded.VFEArchitect/Textures/SteelBridge/SteelBridgeProps_Right.psd
+- Assets/Data/VanillaExpanded.VFEArchitect/Textures/StoneBridge/StoneBridgeProps_Right.psd
+- Assets/Data/VanillaExpanded.VFEArchitect/Textures/StoneBridge/StoneBridgePropsLimestone_Right.psd
+- Assets/Data/VanillaExpanded.VFEArchitect/Textures/StoneBridge/StoneBridgePropsSlate_Loop.psd
+- Assets/Data/VanillaExpanded.VFEArchitect/Textures/StoneBridge/StoneBridgePropsGranite_Right.psd
+- Assets/Data/VanillaExpanded.VFEArchitect/Textures/StoneBridge/StoneBridgePropsSlate_Right.psd
+- Assets/Data/VanillaExpanded.VFEArchitect/Textures/StoneBridge/StoneBridgeProps_Loop.psd
+Dependencies: []
