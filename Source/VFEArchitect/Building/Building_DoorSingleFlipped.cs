@@ -5,9 +5,9 @@ using Verse.Sound;
 
 namespace VFEArchitect
 {
-    public class Building_DoorSingle : Building_Door
+    public class Building_DoorSingleFlipped : Building_Door
     {
-      
+
 
         protected override void DrawAt(Vector3 drawLoc, bool flip = false)
         {
@@ -16,7 +16,7 @@ namespace VFEArchitect
             var vector = new Vector3(0f, 0f, -1f);
             var mesh = MeshPool.plane10;
             var rotation = Rotation;
-            rotation.Rotate(RotationDirection.Clockwise);
+            rotation.Rotate(RotationDirection.Counterclockwise);
             vector = rotation.AsQuat * vector;
             var vector2 = DrawPos;
             vector2.y = AltitudeLayer.DoorMoveable.AltitudeFor();
@@ -25,7 +25,7 @@ namespace VFEArchitect
             Graphic.ShadowGraphic?.DrawWorker(vector2, Rotation, def, this, 0f);
             Comps_PostDraw();
         }
-       
+
 
     }
 

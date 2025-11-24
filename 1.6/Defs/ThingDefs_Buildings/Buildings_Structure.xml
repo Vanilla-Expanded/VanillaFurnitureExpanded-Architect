@@ -884,6 +884,7 @@ Picket fences are considerably more beautiful than alternatives, and evoke a nic
     <defName>VFEArch_SingleDoor_Flipped</defName>
     <label>single door (flipped)</label>
     <uiIconPath>DoorSingle/DoorSingle_MenuIcon_Flipped</uiIconPath>
+	<thingClass>VFEArchitect.Building_DoorSingleFlipped</thingClass>
     <graphicData>
       <texPath>DoorSingle/DoorSingle_Mover_Flipped</texPath>
     </graphicData>
@@ -893,9 +894,7 @@ Picket fences are considerably more beautiful than alternatives, and evoke a nic
       </blueprintGraphicData>
       <paintable>true</paintable>
     </building>
-    <modExtensions>
-      <li Class="VFEArchitect.DoorExtension_Flip" />
-    </modExtensions>
+   
   </ThingDef>
   
   <ThingDef ParentName="DoorBase">

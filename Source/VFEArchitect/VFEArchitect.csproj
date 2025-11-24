@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="ArchitectMod.cs" />
     <Compile Include="Building\Building_DoorSingle.cs" />
+    <Compile Include="Building\Building_DoorSingleFlipped.cs" />
     <Compile Include="DefModExtensions\DefModExtensions.cs" />
     <Compile Include="Harmony\Building_Door_TicksToOpenNow.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

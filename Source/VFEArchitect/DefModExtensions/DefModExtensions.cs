@@ -7,7 +7,7 @@ using Verse;
 
 namespace VFEArchitect
 {
-    public class DoorExtension_Flip : DefModExtension { }
+  
 
     public class BuildExtension_RequireGodMode : DefModExtension { }
 
